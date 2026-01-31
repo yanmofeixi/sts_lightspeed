@@ -12,9 +12,12 @@
 
 #include "sim/ConsoleSimulator.h"
 #include "sim/search/ScumSearchAgent2.h"
+#include "sim/search/GameAction.h"
+#include "sim/search/Action.h"
 #include "sim/SimHelpers.h"
 #include "sim/PrintHelpers.h"
 #include "game/Game.h"
+#include "combat/BattleContext.h"
 
 #include "slaythespire.h"
 
@@ -29,9 +32,150 @@ PYBIND11_MODULE(slaythespire, m) {
     m.def("getNNInterface", &sts::NNInterface::getInstance, "gets the NNInterface object");
 
     pybind11::class_<NNInterface> nnInterface(m, "NNInterface");
-    nnInterface.def("getObservation", &NNInterface::getObservation, "get observation array given a GameContext")
+    nnInterface
+        .def("getObservation", 
+            pybind11::overload_cast<const GameContext&>(&NNInterface::getObservation, pybind11::const_), 
+            "get observation array given a GameContext (no battle info)")
+        .def("getObservation", 
+            pybind11::overload_cast<const GameContext&, const BattleContext*>(&NNInterface::getObservation, pybind11::const_), 
+            "get observation array with battle context",
+            pybind11::arg("gc"), pybind11::arg("bc") = nullptr)
         .def("getObservationMaximums", &NNInterface::getObservationMaximums, "get the defined maximum values of the observation space")
-        .def_property_readonly("observation_space_size", []() { return NNInterface::observation_space_size; });
+        .def_property_readonly("observation_space_size", [](const NNInterface&) { return NNInterface::observation_space_size; });
+
+    // GameAction class for RL step-by-step control (out of combat)
+    pybind11::class_<search::GameAction> gameAction(m, "GameAction");
+    gameAction.def(pybind11::init<>())
+        .def(pybind11::init<int, int>(), pybind11::arg("idx1"), pybind11::arg("idx2") = 0)
+        .def("execute", &search::GameAction::execute, "Execute this action on the given GameContext")
+        .def("is_valid", &search::GameAction::isValidAction, "Check if this action is valid in the given GameContext")
+        .def_static("get_all_actions", &search::GameAction::getAllActionsInState, "Get all valid actions for the current game state")
+        .def_property_readonly("bits", [](const search::GameAction &a) { return a.bits; })
+        .def("__repr__", [](const search::GameAction &a) {
+            std::ostringstream oss;
+            oss << "<GameAction bits=" << a.bits << ">";
+            return oss.str();
+        });
+
+    // ActionType enum for combat actions
+    pybind11::enum_<search::ActionType>(m, "ActionType")
+        .value("CARD", search::ActionType::CARD)
+        .value("POTION", search::ActionType::POTION)
+        .value("SINGLE_CARD_SELECT", search::ActionType::SINGLE_CARD_SELECT)
+        .value("MULTI_CARD_SELECT", search::ActionType::MULTI_CARD_SELECT)
+        .value("END_TURN", search::ActionType::END_TURN);
+
+    // Action class for combat actions
+    pybind11::class_<search::Action> action(m, "Action");
+    action.def(pybind11::init<>())
+        .def(pybind11::init<search::ActionType>())
+        .def(pybind11::init<search::ActionType, int>())
+        .def(pybind11::init<search::ActionType, int, int>())
+        .def("execute", &search::Action::execute, "Execute this combat action")
+        .def("is_valid", &search::Action::isValidAction, "Check if this combat action is valid")
+        .def_static("enumerate_card_select", &search::Action::enumerateCardSelectActions, "Get card select actions")
+        .def_property_readonly("bits", [](const search::Action &a) { return a.bits; })
+        .def_property_readonly("action_type", &search::Action::getActionType)
+        .def_property_readonly("source_idx", &search::Action::getSourceIdx)
+        .def_property_readonly("target_idx", &search::Action::getTargetIdx)
+        .def("__repr__", [](const search::Action &a) {
+            std::ostringstream oss;
+            oss << "<Action type=" << static_cast<int>(a.getActionType()) << " bits=" << a.bits << ">";
+            return oss.str();
+        });
+
+    // Combat Outcome enum
+    pybind11::enum_<Outcome>(m, "BattleOutcome")
+        .value("UNDECIDED", Outcome::UNDECIDED)
+        .value("PLAYER_VICTORY", Outcome::PLAYER_VICTORY)
+        .value("PLAYER_LOSS", Outcome::PLAYER_LOSS);
+
+    // InputState enum (for checking what kind of input the game expects)
+    pybind11::enum_<InputState>(m, "InputState")
+        .value("EXECUTING_ACTIONS", InputState::EXECUTING_ACTIONS)
+        .value("PLAYER_NORMAL", InputState::PLAYER_NORMAL)
+        .value("CARD_SELECT", InputState::CARD_SELECT);
+
+    // BattleContext class
+    pybind11::class_<BattleContext> battleContext(m, "BattleContext");
+    battleContext.def(pybind11::init<>())
+        .def("init", pybind11::overload_cast<const GameContext &>(&BattleContext::init), "Initialize battle from GameContext")
+        .def("exit_battle", &BattleContext::exitBattle, "Exit battle and update GameContext")
+        .def("is_card_play_allowed", &BattleContext::isCardPlayAllowed, "Check if cards can be played")
+        .def_readonly("outcome", &BattleContext::outcome)
+        .def_readonly("turn", &BattleContext::turn)
+        .def_readonly("input_state", &BattleContext::inputState)
+        .def_property_readonly("player_hp", [](const BattleContext &bc) { return bc.player.curHp; })
+        .def_property_readonly("player_block", [](const BattleContext &bc) { return bc.player.block; })
+        .def_property_readonly("player_energy", [](const BattleContext &bc) { return bc.player.energy; })
+        .def_property_readonly("cards_in_hand", [](const BattleContext &bc) { return bc.cards.cardsInHand; })
+        .def_property_readonly("monster_count", [](const BattleContext &bc) { return bc.monsters.monsterCount; })
+        .def("get_monster_hp", [](const BattleContext &bc, int idx) { 
+            if (idx >= 0 && idx < bc.monsters.monsterCount) {
+                return bc.monsters.arr[idx].curHp;
+            }
+            return 0;
+        })
+        .def("get_all_actions", [](const BattleContext &bc) {
+            std::vector<search::Action> actions;
+            
+            // Only enumerate actions when waiting for player input
+            if (bc.inputState == InputState::PLAYER_NORMAL) {
+                // End turn is always an option
+                actions.push_back(search::Action(search::ActionType::END_TURN));
+                
+                // Enumerate playable cards
+                if (bc.isCardPlayAllowed()) {
+                    for (int handIdx = 0; handIdx < bc.cards.cardsInHand; ++handIdx) {
+                        const auto &c = bc.cards.hand[handIdx];
+                        if (!c.canUseOnAnyTarget(bc)) {
+                            continue;
+                        }
+                        if (c.requiresTarget()) {
+                            for (int tIdx = 0; tIdx < bc.monsters.monsterCount; ++tIdx) {
+                                if (bc.monsters.arr[tIdx].isTargetable()) {
+                                    actions.push_back(search::Action(search::ActionType::CARD, handIdx, tIdx));
+                                }
+                            }
+                        } else {
+                            actions.push_back(search::Action(search::ActionType::CARD, handIdx));
+                        }
+                    }
+                }
+                
+                // Enumerate potions
+                for (int pIdx = 0; pIdx < bc.potionCapacity; ++pIdx) {
+                    const auto p = bc.potions[pIdx];
+                    if (p == Potion::EMPTY_POTION_SLOT) continue;
+                    
+                    if (!potionRequiresTarget(p)) {
+                        actions.push_back(search::Action(search::ActionType::POTION, pIdx));
+                    } else {
+                        for (int tIdx = 0; tIdx < bc.monsters.monsterCount; ++tIdx) {
+                            if (bc.monsters.arr[tIdx].isTargetable()) {
+                                actions.push_back(search::Action(search::ActionType::POTION, pIdx, tIdx));
+                            }
+                        }
+                    }
+                }
+            } else if (bc.inputState == InputState::CARD_SELECT) {
+                // Handle card selection (e.g., Warcry, Armaments, etc.)
+                actions = search::Action::enumerateCardSelectActions(bc);
+            }
+            // For other input states (EXECUTING_ACTIONS, etc.), return empty list
+            // The caller should wait/advance the state
+            
+            return actions;
+        }, "Get all valid combat actions")
+        .def("__repr__", [](const BattleContext &bc) {
+            std::ostringstream oss;
+            oss << "<BattleContext turn=" << bc.turn 
+                << " hp=" << bc.player.curHp 
+                << " energy=" << bc.player.energy
+                << " hand=" << bc.cards.cardsInHand 
+                << " outcome=" << battleOutcomeStrings[static_cast<int>(bc.outcome)] << ">";
+            return oss.str();
+        });
 
     pybind11::class_<search::ScumSearchAgent2> agent(m, "Agent");
     agent.def(pybind11::init<>());

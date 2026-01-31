@@ -1,0 +1,10 @@
+C:/Code/SlayTheSpireAI/sts_lightspeed/build_py/CMakeFiles/slaythespire.dir
+C:/Code/SlayTheSpireAI/sts_lightspeed/build_py/CMakeFiles/main.dir
+C:/Code/SlayTheSpireAI/sts_lightspeed/build_py/CMakeFiles/test.dir
+C:/Code/SlayTheSpireAI/sts_lightspeed/build_py/CMakeFiles/small-test.dir
+C:/Code/SlayTheSpireAI/sts_lightspeed/build_py/CMakeFiles/edit_cache.dir
+C:/Code/SlayTheSpireAI/sts_lightspeed/build_py/CMakeFiles/rebuild_cache.dir
+C:/Code/SlayTheSpireAI/sts_lightspeed/build_py/json/CMakeFiles/edit_cache.dir
+C:/Code/SlayTheSpireAI/sts_lightspeed/build_py/json/CMakeFiles/rebuild_cache.dir
+C:/Code/SlayTheSpireAI/sts_lightspeed/build_py/pybind11/CMakeFiles/edit_cache.dir
+C:/Code/SlayTheSpireAI/sts_lightspeed/build_py/pybind11/CMakeFiles/rebuild_cache.dir

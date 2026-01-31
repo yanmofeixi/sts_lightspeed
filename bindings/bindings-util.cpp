@@ -10,6 +10,7 @@
 #include "sim/PrintHelpers.h"
 #include "game/Game.h"
 #include "game/Map.h"
+#include "combat/BattleContext.h"
 
 #include "slaythespire.h"
 
@@ -34,6 +35,11 @@ namespace sts {
     }
 
     std::array<int,NNInterface::observation_space_size> NNInterface::getObservation(const GameContext &gc) const {
+        // 调用带 nullptr 的版本（无战斗信息）
+        return getObservation(gc, nullptr);
+    }
+
+    std::array<int,NNInterface::observation_space_size> NNInterface::getObservation(const GameContext &gc, const BattleContext *bc) const {
         std::array<int,observation_space_size> ret {};
 
         int offset = 0;
@@ -59,6 +65,68 @@ namespace sts {
         }
         offset += 178;
 
+        // ===== 战斗信息（可选扩展） =====
+        // 需要在战斗中才有意义
+        // 维度规划:
+        // [412-415] 玩家战斗状态：能量、护甲、力量、敏捷
+        // [416-420] 敌人 0: HP, Block, Strength, Vulnerable, Weak
+        // [421-425] 敌人 1: HP, Block, Strength, Vulnerable, Weak
+        // [426-430] 敌人 2: HP, Block, Strength, Vulnerable, Weak
+        // [431-435] 敌人 3: HP, Block, Strength, Vulnerable, Weak
+        // [436-440] 敌人 4: HP, Block, Strength, Vulnerable, Weak
+        // [441-450] 手牌：10 张，每张编码为 CardId（无牌为 0）
+        // 总计新增 39 维 -> 451
+        if (bc != nullptr && gc.screenState == ScreenState::BATTLE) {
+            int battleOffset = 412;
+
+            ret[battleOffset++] = std::max(0, bc->player.energy);
+            ret[battleOffset++] = std::max(0, bc->player.block);
+            ret[battleOffset++] = bc->player.strength;
+            ret[battleOffset++] = bc->player.dexterity;
+
+            for (int i = 0; i < 5; ++i) {
+                const auto &m = bc->monsters.arr[i];
+                if (m.isAlive()) {
+                    ret[battleOffset++] = std::max(0, m.curHp);
+                    ret[battleOffset++] = std::max(0, m.block);
+                    ret[battleOffset++] = m.strength;
+                    ret[battleOffset++] = m.vulnerable;
+                    ret[battleOffset++] = m.weak;
+                } else {
+                    ret[battleOffset++] = 0;
+                    ret[battleOffset++] = 0;
+                    ret[battleOffset++] = 0;
+                    ret[battleOffset++] = 0;
+                    ret[battleOffset++] = 0;
+                }
+            }
+
+            for (int i = 0; i < 10; ++i) {
+                if (i < bc->cards.cardsInHand) {
+                    ret[battleOffset++] = static_cast<int>(bc->cards.hand[i].id);
+                } else {
+                    ret[battleOffset++] = 0;
+                }
+            }
+
+            // ===== 敌人意图信息 (15维) =====
+            // [451-465] 每个敌人 3 维：intentDamage, intentHits, isAttacking
+            for (int i = 0; i < 5; ++i) {
+                const auto &m = bc->monsters.arr[i];
+                if (m.isAlive()) {
+                    DamageInfo dInfo = m.getMoveBaseDamage(*bc);
+                    int calculatedDamage = m.calculateDamageToPlayer(*bc, dInfo.damage);
+                    ret[battleOffset++] = calculatedDamage;       // 计算后的单次伤害
+                    ret[battleOffset++] = dInfo.attackCount;      // 攻击次数
+                    ret[battleOffset++] = m.isAttacking() ? 1 : 0; // 是否攻击
+                } else {
+                    ret[battleOffset++] = 0;
+                    ret[battleOffset++] = 0;
+                    ret[battleOffset++] = 0;
+                }
+            }
+        }
+
         return ret;
     }
 
@@ -80,6 +148,32 @@ namespace sts {
 
         std::fill(ret.begin()+spaceOffset, ret.end(), 1);
         spaceOffset += 178;
+
+        // ===== 战斗扩展部分最大值 =====
+        // 注意: 这些最大值用于归一化，不需要非常精确
+        ret[spaceOffset++] = 10;  // 能量
+        ret[spaceOffset++] = 999; // 护甲
+        ret[spaceOffset++] = 50;  // 力量
+        ret[spaceOffset++] = 50;  // 敏捷
+
+        for (int i = 0; i < 5; ++i) {
+            ret[spaceOffset++] = playerHpMax; // 敌人 HP
+            ret[spaceOffset++] = 999;         // 敌人护甲
+            ret[spaceOffset++] = 50;          // 敌人力量
+            ret[spaceOffset++] = 50;          // 敌人易伤
+            ret[spaceOffset++] = 50;          // 敌人虚弱
+        }
+
+        for (int i = 0; i < 10; ++i) {
+            ret[spaceOffset++] = 400; // CardId 上限粗略估计
+        }
+
+        // ===== 敌人意图部分最大值 =====
+        for (int i = 0; i < 5; ++i) {
+            ret[spaceOffset++] = 200;  // intentDamage (计算后单次伤害)
+            ret[spaceOffset++] = 20;   // intentHits (攻击次数)
+            ret[spaceOffset++] = 1;    // isAttacking (0/1)
+        }
 
         return ret;
     }

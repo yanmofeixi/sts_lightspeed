@@ -1,0 +1,3 @@
+C:\msys64\mingw64\bin\cmake.exe -E rm -f CMakeFiles\small-test.dir/objects.a
+C:\msys64\mingw64\bin\ar.exe qc CMakeFiles\small-test.dir/objects.a @CMakeFiles\small-test.dir\objects1.rsp
+C:\msys64\mingw64\bin\g++.exe -Wno-shift-count-overflow -O3 -Wl,--whole-archive CMakeFiles\small-test.dir/objects.a -Wl,--no-whole-archive -o small-test.exe -Wl,--out-implib,libsmall-test.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\small-test.dir\linkLibs.rsp

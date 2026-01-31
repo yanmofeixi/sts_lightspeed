@@ -1,0 +1,1 @@
+-IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/single_include -IC:/Code/SlayTheSpireAI/sts_lightspeed/bindings -isystem C:/Code/SlayTheSpireAI/sts_lightspeed/pybind11/include -isystem C:/PROGRA~1/PYTHON~1/include

@@ -14,7 +14,7 @@
 namespace sts {
 
     struct NNInterface {
-        static constexpr int observation_space_size = 412;
+        static constexpr int observation_space_size = 466;
         static constexpr int playerHpMax = 200;
         static constexpr int playerGoldMax = 1800;
         static constexpr int cardCountMax = 7;
@@ -29,6 +29,7 @@ namespace sts {
         int getCardIdx(Card c) const;
         std::array<int,observation_space_size> getObservationMaximums() const;
         std::array<int,observation_space_size> getObservation(const GameContext &gc) const;
+        std::array<int,observation_space_size> getObservation(const GameContext &gc, const BattleContext *bc) const;
 
 
         static std::vector<int> createOneHotCardEncodingMap();
@@ -43,6 +44,7 @@ namespace sts {
 
 
     class GameContext;
+    class BattleContext;
     class Map;
 
     namespace py {
