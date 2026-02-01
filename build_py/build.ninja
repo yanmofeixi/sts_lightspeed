@@ -51,8 +51,6 @@ build CMakeFiles/slaythespire.dir/bindings/slaythespire.cpp.obj: CXX_COMPILER__s
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/single_include -IC:/Code/SlayTheSpireAI/sts_lightspeed/bindings -isystem C:/Code/SlayTheSpireAI/sts_lightspeed/pybind11/include -isystem "C:/Program Files/Python312/Include"
   OBJECT_DIR = CMakeFiles\slaythespire.dir
   OBJECT_FILE_DIR = CMakeFiles\slaythespire.dir\bindings
-  TARGET_COMPILE_PDB = CMakeFiles\slaythespire.dir\
-  TARGET_PDB = slaythespire.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\slaythespire.dir
 
 build CMakeFiles/slaythespire.dir/bindings/bindings-util.cpp.obj: CXX_COMPILER__slaythespire_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/bindings/bindings-util.cpp || cmake_object_order_depends_target_slaythespire
@@ -62,8 +60,6 @@ build CMakeFiles/slaythespire.dir/bindings/bindings-util.cpp.obj: CXX_COMPILER__
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/single_include -IC:/Code/SlayTheSpireAI/sts_lightspeed/bindings -isystem C:/Code/SlayTheSpireAI/sts_lightspeed/pybind11/include -isystem "C:/Program Files/Python312/Include"
   OBJECT_DIR = CMakeFiles\slaythespire.dir
   OBJECT_FILE_DIR = CMakeFiles\slaythespire.dir\bindings
-  TARGET_COMPILE_PDB = CMakeFiles\slaythespire.dir\
-  TARGET_PDB = slaythespire.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\slaythespire.dir
 
 build CMakeFiles/slaythespire.dir/src/combat/Actions.cpp.obj: CXX_COMPILER__slaythespire_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/combat/Actions.cpp || cmake_object_order_depends_target_slaythespire
@@ -73,8 +69,6 @@ build CMakeFiles/slaythespire.dir/src/combat/Actions.cpp.obj: CXX_COMPILER__slay
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/single_include -IC:/Code/SlayTheSpireAI/sts_lightspeed/bindings -isystem C:/Code/SlayTheSpireAI/sts_lightspeed/pybind11/include -isystem "C:/Program Files/Python312/Include"
   OBJECT_DIR = CMakeFiles\slaythespire.dir
   OBJECT_FILE_DIR = CMakeFiles\slaythespire.dir\src\combat
-  TARGET_COMPILE_PDB = CMakeFiles\slaythespire.dir\
-  TARGET_PDB = slaythespire.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\slaythespire.dir
 
 build CMakeFiles/slaythespire.dir/src/combat/BattleContext.cpp.obj: CXX_COMPILER__slaythespire_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/combat/BattleContext.cpp || cmake_object_order_depends_target_slaythespire
@@ -84,8 +78,6 @@ build CMakeFiles/slaythespire.dir/src/combat/BattleContext.cpp.obj: CXX_COMPILER
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/single_include -IC:/Code/SlayTheSpireAI/sts_lightspeed/bindings -isystem C:/Code/SlayTheSpireAI/sts_lightspeed/pybind11/include -isystem "C:/Program Files/Python312/Include"
   OBJECT_DIR = CMakeFiles\slaythespire.dir
   OBJECT_FILE_DIR = CMakeFiles\slaythespire.dir\src\combat
-  TARGET_COMPILE_PDB = CMakeFiles\slaythespire.dir\
-  TARGET_PDB = slaythespire.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\slaythespire.dir
 
 build CMakeFiles/slaythespire.dir/src/combat/CardInstance.cpp.obj: CXX_COMPILER__slaythespire_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/combat/CardInstance.cpp || cmake_object_order_depends_target_slaythespire
@@ -95,8 +87,6 @@ build CMakeFiles/slaythespire.dir/src/combat/CardInstance.cpp.obj: CXX_COMPILER_
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/single_include -IC:/Code/SlayTheSpireAI/sts_lightspeed/bindings -isystem C:/Code/SlayTheSpireAI/sts_lightspeed/pybind11/include -isystem "C:/Program Files/Python312/Include"
   OBJECT_DIR = CMakeFiles\slaythespire.dir
   OBJECT_FILE_DIR = CMakeFiles\slaythespire.dir\src\combat
-  TARGET_COMPILE_PDB = CMakeFiles\slaythespire.dir\
-  TARGET_PDB = slaythespire.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\slaythespire.dir
 
 build CMakeFiles/slaythespire.dir/src/combat/CardManager.cpp.obj: CXX_COMPILER__slaythespire_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/combat/CardManager.cpp || cmake_object_order_depends_target_slaythespire
@@ -106,8 +96,6 @@ build CMakeFiles/slaythespire.dir/src/combat/CardManager.cpp.obj: CXX_COMPILER__
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/single_include -IC:/Code/SlayTheSpireAI/sts_lightspeed/bindings -isystem C:/Code/SlayTheSpireAI/sts_lightspeed/pybind11/include -isystem "C:/Program Files/Python312/Include"
   OBJECT_DIR = CMakeFiles\slaythespire.dir
   OBJECT_FILE_DIR = CMakeFiles\slaythespire.dir\src\combat
-  TARGET_COMPILE_PDB = CMakeFiles\slaythespire.dir\
-  TARGET_PDB = slaythespire.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\slaythespire.dir
 
 build CMakeFiles/slaythespire.dir/src/combat/CardQueue.cpp.obj: CXX_COMPILER__slaythespire_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/combat/CardQueue.cpp || cmake_object_order_depends_target_slaythespire
@@ -117,8 +105,6 @@ build CMakeFiles/slaythespire.dir/src/combat/CardQueue.cpp.obj: CXX_COMPILER__sl
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/single_include -IC:/Code/SlayTheSpireAI/sts_lightspeed/bindings -isystem C:/Code/SlayTheSpireAI/sts_lightspeed/pybind11/include -isystem "C:/Program Files/Python312/Include"
   OBJECT_DIR = CMakeFiles\slaythespire.dir
   OBJECT_FILE_DIR = CMakeFiles\slaythespire.dir\src\combat
-  TARGET_COMPILE_PDB = CMakeFiles\slaythespire.dir\
-  TARGET_PDB = slaythespire.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\slaythespire.dir
 
 build CMakeFiles/slaythespire.dir/src/combat/Monster.cpp.obj: CXX_COMPILER__slaythespire_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/combat/Monster.cpp || cmake_object_order_depends_target_slaythespire
@@ -128,8 +114,6 @@ build CMakeFiles/slaythespire.dir/src/combat/Monster.cpp.obj: CXX_COMPILER__slay
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/single_include -IC:/Code/SlayTheSpireAI/sts_lightspeed/bindings -isystem C:/Code/SlayTheSpireAI/sts_lightspeed/pybind11/include -isystem "C:/Program Files/Python312/Include"
   OBJECT_DIR = CMakeFiles\slaythespire.dir
   OBJECT_FILE_DIR = CMakeFiles\slaythespire.dir\src\combat
-  TARGET_COMPILE_PDB = CMakeFiles\slaythespire.dir\
-  TARGET_PDB = slaythespire.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\slaythespire.dir
 
 build CMakeFiles/slaythespire.dir/src/combat/MonsterGroup.cpp.obj: CXX_COMPILER__slaythespire_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/combat/MonsterGroup.cpp || cmake_object_order_depends_target_slaythespire
@@ -139,8 +123,6 @@ build CMakeFiles/slaythespire.dir/src/combat/MonsterGroup.cpp.obj: CXX_COMPILER_
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/single_include -IC:/Code/SlayTheSpireAI/sts_lightspeed/bindings -isystem C:/Code/SlayTheSpireAI/sts_lightspeed/pybind11/include -isystem "C:/Program Files/Python312/Include"
   OBJECT_DIR = CMakeFiles\slaythespire.dir
   OBJECT_FILE_DIR = CMakeFiles\slaythespire.dir\src\combat
-  TARGET_COMPILE_PDB = CMakeFiles\slaythespire.dir\
-  TARGET_PDB = slaythespire.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\slaythespire.dir
 
 build CMakeFiles/slaythespire.dir/src/combat/MonsterMoveDamage.cpp.obj: CXX_COMPILER__slaythespire_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/combat/MonsterMoveDamage.cpp || cmake_object_order_depends_target_slaythespire
@@ -150,8 +132,6 @@ build CMakeFiles/slaythespire.dir/src/combat/MonsterMoveDamage.cpp.obj: CXX_COMP
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/single_include -IC:/Code/SlayTheSpireAI/sts_lightspeed/bindings -isystem C:/Code/SlayTheSpireAI/sts_lightspeed/pybind11/include -isystem "C:/Program Files/Python312/Include"
   OBJECT_DIR = CMakeFiles\slaythespire.dir
   OBJECT_FILE_DIR = CMakeFiles\slaythespire.dir\src\combat
-  TARGET_COMPILE_PDB = CMakeFiles\slaythespire.dir\
-  TARGET_PDB = slaythespire.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\slaythespire.dir
 
 build CMakeFiles/slaythespire.dir/src/combat/MonsterSpecific.cpp.obj: CXX_COMPILER__slaythespire_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/combat/MonsterSpecific.cpp || cmake_object_order_depends_target_slaythespire
@@ -161,8 +141,6 @@ build CMakeFiles/slaythespire.dir/src/combat/MonsterSpecific.cpp.obj: CXX_COMPIL
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/single_include -IC:/Code/SlayTheSpireAI/sts_lightspeed/bindings -isystem C:/Code/SlayTheSpireAI/sts_lightspeed/pybind11/include -isystem "C:/Program Files/Python312/Include"
   OBJECT_DIR = CMakeFiles\slaythespire.dir
   OBJECT_FILE_DIR = CMakeFiles\slaythespire.dir\src\combat
-  TARGET_COMPILE_PDB = CMakeFiles\slaythespire.dir\
-  TARGET_PDB = slaythespire.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\slaythespire.dir
 
 build CMakeFiles/slaythespire.dir/src/combat/Player.cpp.obj: CXX_COMPILER__slaythespire_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/combat/Player.cpp || cmake_object_order_depends_target_slaythespire
@@ -172,8 +150,6 @@ build CMakeFiles/slaythespire.dir/src/combat/Player.cpp.obj: CXX_COMPILER__slayt
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/single_include -IC:/Code/SlayTheSpireAI/sts_lightspeed/bindings -isystem C:/Code/SlayTheSpireAI/sts_lightspeed/pybind11/include -isystem "C:/Program Files/Python312/Include"
   OBJECT_DIR = CMakeFiles\slaythespire.dir
   OBJECT_FILE_DIR = CMakeFiles\slaythespire.dir\src\combat
-  TARGET_COMPILE_PDB = CMakeFiles\slaythespire.dir\
-  TARGET_PDB = slaythespire.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\slaythespire.dir
 
 build CMakeFiles/slaythespire.dir/src/game/Card.cpp.obj: CXX_COMPILER__slaythespire_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/game/Card.cpp || cmake_object_order_depends_target_slaythespire
@@ -183,8 +159,6 @@ build CMakeFiles/slaythespire.dir/src/game/Card.cpp.obj: CXX_COMPILER__slaythesp
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/single_include -IC:/Code/SlayTheSpireAI/sts_lightspeed/bindings -isystem C:/Code/SlayTheSpireAI/sts_lightspeed/pybind11/include -isystem "C:/Program Files/Python312/Include"
   OBJECT_DIR = CMakeFiles\slaythespire.dir
   OBJECT_FILE_DIR = CMakeFiles\slaythespire.dir\src\game
-  TARGET_COMPILE_PDB = CMakeFiles\slaythespire.dir\
-  TARGET_PDB = slaythespire.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\slaythespire.dir
 
 build CMakeFiles/slaythespire.dir/src/game/CombatReward.cpp.obj: CXX_COMPILER__slaythespire_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/game/CombatReward.cpp || cmake_object_order_depends_target_slaythespire
@@ -194,8 +168,6 @@ build CMakeFiles/slaythespire.dir/src/game/CombatReward.cpp.obj: CXX_COMPILER__s
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/single_include -IC:/Code/SlayTheSpireAI/sts_lightspeed/bindings -isystem C:/Code/SlayTheSpireAI/sts_lightspeed/pybind11/include -isystem "C:/Program Files/Python312/Include"
   OBJECT_DIR = CMakeFiles\slaythespire.dir
   OBJECT_FILE_DIR = CMakeFiles\slaythespire.dir\src\game
-  TARGET_COMPILE_PDB = CMakeFiles\slaythespire.dir\
-  TARGET_PDB = slaythespire.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\slaythespire.dir
 
 build CMakeFiles/slaythespire.dir/src/game/Deck.cpp.obj: CXX_COMPILER__slaythespire_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/game/Deck.cpp || cmake_object_order_depends_target_slaythespire
@@ -205,8 +177,6 @@ build CMakeFiles/slaythespire.dir/src/game/Deck.cpp.obj: CXX_COMPILER__slaythesp
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/single_include -IC:/Code/SlayTheSpireAI/sts_lightspeed/bindings -isystem C:/Code/SlayTheSpireAI/sts_lightspeed/pybind11/include -isystem "C:/Program Files/Python312/Include"
   OBJECT_DIR = CMakeFiles\slaythespire.dir
   OBJECT_FILE_DIR = CMakeFiles\slaythespire.dir\src\game
-  TARGET_COMPILE_PDB = CMakeFiles\slaythespire.dir\
-  TARGET_PDB = slaythespire.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\slaythespire.dir
 
 build CMakeFiles/slaythespire.dir/src/game/Game.cpp.obj: CXX_COMPILER__slaythespire_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/game/Game.cpp || cmake_object_order_depends_target_slaythespire
@@ -216,8 +186,6 @@ build CMakeFiles/slaythespire.dir/src/game/Game.cpp.obj: CXX_COMPILER__slaythesp
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/single_include -IC:/Code/SlayTheSpireAI/sts_lightspeed/bindings -isystem C:/Code/SlayTheSpireAI/sts_lightspeed/pybind11/include -isystem "C:/Program Files/Python312/Include"
   OBJECT_DIR = CMakeFiles\slaythespire.dir
   OBJECT_FILE_DIR = CMakeFiles\slaythespire.dir\src\game
-  TARGET_COMPILE_PDB = CMakeFiles\slaythespire.dir\
-  TARGET_PDB = slaythespire.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\slaythespire.dir
 
 build CMakeFiles/slaythespire.dir/src/game/GameContext.cpp.obj: CXX_COMPILER__slaythespire_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/game/GameContext.cpp || cmake_object_order_depends_target_slaythespire
@@ -227,8 +195,6 @@ build CMakeFiles/slaythespire.dir/src/game/GameContext.cpp.obj: CXX_COMPILER__sl
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/single_include -IC:/Code/SlayTheSpireAI/sts_lightspeed/bindings -isystem C:/Code/SlayTheSpireAI/sts_lightspeed/pybind11/include -isystem "C:/Program Files/Python312/Include"
   OBJECT_DIR = CMakeFiles\slaythespire.dir
   OBJECT_FILE_DIR = CMakeFiles\slaythespire.dir\src\game
-  TARGET_COMPILE_PDB = CMakeFiles\slaythespire.dir\
-  TARGET_PDB = slaythespire.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\slaythespire.dir
 
 build CMakeFiles/slaythespire.dir/src/game/Map.cpp.obj: CXX_COMPILER__slaythespire_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/game/Map.cpp || cmake_object_order_depends_target_slaythespire
@@ -238,8 +204,6 @@ build CMakeFiles/slaythespire.dir/src/game/Map.cpp.obj: CXX_COMPILER__slaythespi
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/single_include -IC:/Code/SlayTheSpireAI/sts_lightspeed/bindings -isystem C:/Code/SlayTheSpireAI/sts_lightspeed/pybind11/include -isystem "C:/Program Files/Python312/Include"
   OBJECT_DIR = CMakeFiles\slaythespire.dir
   OBJECT_FILE_DIR = CMakeFiles\slaythespire.dir\src\game
-  TARGET_COMPILE_PDB = CMakeFiles\slaythespire.dir\
-  TARGET_PDB = slaythespire.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\slaythespire.dir
 
 build CMakeFiles/slaythespire.dir/src/game/Neow.cpp.obj: CXX_COMPILER__slaythespire_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/game/Neow.cpp || cmake_object_order_depends_target_slaythespire
@@ -249,8 +213,6 @@ build CMakeFiles/slaythespire.dir/src/game/Neow.cpp.obj: CXX_COMPILER__slaythesp
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/single_include -IC:/Code/SlayTheSpireAI/sts_lightspeed/bindings -isystem C:/Code/SlayTheSpireAI/sts_lightspeed/pybind11/include -isystem "C:/Program Files/Python312/Include"
   OBJECT_DIR = CMakeFiles\slaythespire.dir
   OBJECT_FILE_DIR = CMakeFiles\slaythespire.dir\src\game
-  TARGET_COMPILE_PDB = CMakeFiles\slaythespire.dir\
-  TARGET_PDB = slaythespire.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\slaythespire.dir
 
 build CMakeFiles/slaythespire.dir/src/game/SaveFile.cpp.obj: CXX_COMPILER__slaythespire_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/game/SaveFile.cpp || cmake_object_order_depends_target_slaythespire
@@ -260,8 +222,6 @@ build CMakeFiles/slaythespire.dir/src/game/SaveFile.cpp.obj: CXX_COMPILER__slayt
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/single_include -IC:/Code/SlayTheSpireAI/sts_lightspeed/bindings -isystem C:/Code/SlayTheSpireAI/sts_lightspeed/pybind11/include -isystem "C:/Program Files/Python312/Include"
   OBJECT_DIR = CMakeFiles\slaythespire.dir
   OBJECT_FILE_DIR = CMakeFiles\slaythespire.dir\src\game
-  TARGET_COMPILE_PDB = CMakeFiles\slaythespire.dir\
-  TARGET_PDB = slaythespire.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\slaythespire.dir
 
 build CMakeFiles/slaythespire.dir/src/game/Shop.cpp.obj: CXX_COMPILER__slaythespire_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/game/Shop.cpp || cmake_object_order_depends_target_slaythespire
@@ -271,8 +231,6 @@ build CMakeFiles/slaythespire.dir/src/game/Shop.cpp.obj: CXX_COMPILER__slaythesp
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/single_include -IC:/Code/SlayTheSpireAI/sts_lightspeed/bindings -isystem C:/Code/SlayTheSpireAI/sts_lightspeed/pybind11/include -isystem "C:/Program Files/Python312/Include"
   OBJECT_DIR = CMakeFiles\slaythespire.dir
   OBJECT_FILE_DIR = CMakeFiles\slaythespire.dir\src\game
-  TARGET_COMPILE_PDB = CMakeFiles\slaythespire.dir\
-  TARGET_PDB = slaythespire.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\slaythespire.dir
 
 build CMakeFiles/slaythespire.dir/src/sim/BattleSimulator.cpp.obj: CXX_COMPILER__slaythespire_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/sim/BattleSimulator.cpp || cmake_object_order_depends_target_slaythespire
@@ -282,8 +240,6 @@ build CMakeFiles/slaythespire.dir/src/sim/BattleSimulator.cpp.obj: CXX_COMPILER_
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/single_include -IC:/Code/SlayTheSpireAI/sts_lightspeed/bindings -isystem C:/Code/SlayTheSpireAI/sts_lightspeed/pybind11/include -isystem "C:/Program Files/Python312/Include"
   OBJECT_DIR = CMakeFiles\slaythespire.dir
   OBJECT_FILE_DIR = CMakeFiles\slaythespire.dir\src\sim
-  TARGET_COMPILE_PDB = CMakeFiles\slaythespire.dir\
-  TARGET_PDB = slaythespire.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\slaythespire.dir
 
 build CMakeFiles/slaythespire.dir/src/sim/ConsoleSimulator.cpp.obj: CXX_COMPILER__slaythespire_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/sim/ConsoleSimulator.cpp || cmake_object_order_depends_target_slaythespire
@@ -293,8 +249,6 @@ build CMakeFiles/slaythespire.dir/src/sim/ConsoleSimulator.cpp.obj: CXX_COMPILER
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/single_include -IC:/Code/SlayTheSpireAI/sts_lightspeed/bindings -isystem C:/Code/SlayTheSpireAI/sts_lightspeed/pybind11/include -isystem "C:/Program Files/Python312/Include"
   OBJECT_DIR = CMakeFiles\slaythespire.dir
   OBJECT_FILE_DIR = CMakeFiles\slaythespire.dir\src\sim
-  TARGET_COMPILE_PDB = CMakeFiles\slaythespire.dir\
-  TARGET_PDB = slaythespire.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\slaythespire.dir
 
 build CMakeFiles/slaythespire.dir/src/sim/PrintHelpers.cpp.obj: CXX_COMPILER__slaythespire_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/sim/PrintHelpers.cpp || cmake_object_order_depends_target_slaythespire
@@ -304,8 +258,6 @@ build CMakeFiles/slaythespire.dir/src/sim/PrintHelpers.cpp.obj: CXX_COMPILER__sl
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/single_include -IC:/Code/SlayTheSpireAI/sts_lightspeed/bindings -isystem C:/Code/SlayTheSpireAI/sts_lightspeed/pybind11/include -isystem "C:/Program Files/Python312/Include"
   OBJECT_DIR = CMakeFiles\slaythespire.dir
   OBJECT_FILE_DIR = CMakeFiles\slaythespire.dir\src\sim
-  TARGET_COMPILE_PDB = CMakeFiles\slaythespire.dir\
-  TARGET_PDB = slaythespire.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\slaythespire.dir
 
 build CMakeFiles/slaythespire.dir/src/sim/SimHelpers.cpp.obj: CXX_COMPILER__slaythespire_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/sim/SimHelpers.cpp || cmake_object_order_depends_target_slaythespire
@@ -315,8 +267,6 @@ build CMakeFiles/slaythespire.dir/src/sim/SimHelpers.cpp.obj: CXX_COMPILER__slay
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/single_include -IC:/Code/SlayTheSpireAI/sts_lightspeed/bindings -isystem C:/Code/SlayTheSpireAI/sts_lightspeed/pybind11/include -isystem "C:/Program Files/Python312/Include"
   OBJECT_DIR = CMakeFiles\slaythespire.dir
   OBJECT_FILE_DIR = CMakeFiles\slaythespire.dir\src\sim
-  TARGET_COMPILE_PDB = CMakeFiles\slaythespire.dir\
-  TARGET_PDB = slaythespire.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\slaythespire.dir
 
 build CMakeFiles/slaythespire.dir/src/sim/search/Action.cpp.obj: CXX_COMPILER__slaythespire_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/sim/search/Action.cpp || cmake_object_order_depends_target_slaythespire
@@ -326,8 +276,6 @@ build CMakeFiles/slaythespire.dir/src/sim/search/Action.cpp.obj: CXX_COMPILER__s
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/single_include -IC:/Code/SlayTheSpireAI/sts_lightspeed/bindings -isystem C:/Code/SlayTheSpireAI/sts_lightspeed/pybind11/include -isystem "C:/Program Files/Python312/Include"
   OBJECT_DIR = CMakeFiles\slaythespire.dir
   OBJECT_FILE_DIR = CMakeFiles\slaythespire.dir\src\sim\search
-  TARGET_COMPILE_PDB = CMakeFiles\slaythespire.dir\
-  TARGET_PDB = slaythespire.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\slaythespire.dir
 
 build CMakeFiles/slaythespire.dir/src/sim/search/BattleScumSearcher2.cpp.obj: CXX_COMPILER__slaythespire_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/sim/search/BattleScumSearcher2.cpp || cmake_object_order_depends_target_slaythespire
@@ -337,8 +285,6 @@ build CMakeFiles/slaythespire.dir/src/sim/search/BattleScumSearcher2.cpp.obj: CX
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/single_include -IC:/Code/SlayTheSpireAI/sts_lightspeed/bindings -isystem C:/Code/SlayTheSpireAI/sts_lightspeed/pybind11/include -isystem "C:/Program Files/Python312/Include"
   OBJECT_DIR = CMakeFiles\slaythespire.dir
   OBJECT_FILE_DIR = CMakeFiles\slaythespire.dir\src\sim\search
-  TARGET_COMPILE_PDB = CMakeFiles\slaythespire.dir\
-  TARGET_PDB = slaythespire.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\slaythespire.dir
 
 build CMakeFiles/slaythespire.dir/src/sim/search/ExpertKnowledge.cpp.obj: CXX_COMPILER__slaythespire_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/sim/search/ExpertKnowledge.cpp || cmake_object_order_depends_target_slaythespire
@@ -348,8 +294,6 @@ build CMakeFiles/slaythespire.dir/src/sim/search/ExpertKnowledge.cpp.obj: CXX_CO
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/single_include -IC:/Code/SlayTheSpireAI/sts_lightspeed/bindings -isystem C:/Code/SlayTheSpireAI/sts_lightspeed/pybind11/include -isystem "C:/Program Files/Python312/Include"
   OBJECT_DIR = CMakeFiles\slaythespire.dir
   OBJECT_FILE_DIR = CMakeFiles\slaythespire.dir\src\sim\search
-  TARGET_COMPILE_PDB = CMakeFiles\slaythespire.dir\
-  TARGET_PDB = slaythespire.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\slaythespire.dir
 
 build CMakeFiles/slaythespire.dir/src/sim/search/GameAction.cpp.obj: CXX_COMPILER__slaythespire_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/sim/search/GameAction.cpp || cmake_object_order_depends_target_slaythespire
@@ -359,8 +303,6 @@ build CMakeFiles/slaythespire.dir/src/sim/search/GameAction.cpp.obj: CXX_COMPILE
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/single_include -IC:/Code/SlayTheSpireAI/sts_lightspeed/bindings -isystem C:/Code/SlayTheSpireAI/sts_lightspeed/pybind11/include -isystem "C:/Program Files/Python312/Include"
   OBJECT_DIR = CMakeFiles\slaythespire.dir
   OBJECT_FILE_DIR = CMakeFiles\slaythespire.dir\src\sim\search
-  TARGET_COMPILE_PDB = CMakeFiles\slaythespire.dir\
-  TARGET_PDB = slaythespire.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\slaythespire.dir
 
 build CMakeFiles/slaythespire.dir/src/sim/search/ScumSearchAgent2.cpp.obj: CXX_COMPILER__slaythespire_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/sim/search/ScumSearchAgent2.cpp || cmake_object_order_depends_target_slaythespire
@@ -370,8 +312,6 @@ build CMakeFiles/slaythespire.dir/src/sim/search/ScumSearchAgent2.cpp.obj: CXX_C
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/single_include -IC:/Code/SlayTheSpireAI/sts_lightspeed/bindings -isystem C:/Code/SlayTheSpireAI/sts_lightspeed/pybind11/include -isystem "C:/Program Files/Python312/Include"
   OBJECT_DIR = CMakeFiles\slaythespire.dir
   OBJECT_FILE_DIR = CMakeFiles\slaythespire.dir\src\sim\search
-  TARGET_COMPILE_PDB = CMakeFiles\slaythespire.dir\
-  TARGET_PDB = slaythespire.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\slaythespire.dir
 
 build CMakeFiles/slaythespire.dir/src/sim/search/SimpleAgent.cpp.obj: CXX_COMPILER__slaythespire_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/sim/search/SimpleAgent.cpp || cmake_object_order_depends_target_slaythespire
@@ -381,8 +321,6 @@ build CMakeFiles/slaythespire.dir/src/sim/search/SimpleAgent.cpp.obj: CXX_COMPIL
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/single_include -IC:/Code/SlayTheSpireAI/sts_lightspeed/bindings -isystem C:/Code/SlayTheSpireAI/sts_lightspeed/pybind11/include -isystem "C:/Program Files/Python312/Include"
   OBJECT_DIR = CMakeFiles\slaythespire.dir
   OBJECT_FILE_DIR = CMakeFiles\slaythespire.dir\src\sim\search
-  TARGET_COMPILE_PDB = CMakeFiles\slaythespire.dir\
-  TARGET_PDB = slaythespire.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\slaythespire.dir
 
 
@@ -400,10 +338,9 @@ build slaythespire.cp312-win_amd64.pyd: CXX_MODULE_LIBRARY_LINKER__slaythespire_
   OBJECT_DIR = CMakeFiles\slaythespire.dir
   POST_BUILD = C:\Windows\system32\cmd.exe /C "cd /D C:\Code\SlayTheSpireAI\sts_lightspeed\build_py && C:\msys64\mingw64\bin\strip.exe C:/Code/SlayTheSpireAI/sts_lightspeed/build_py/slaythespire.cp312-win_amd64.pyd"
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\slaythespire.dir\
   TARGET_FILE = slaythespire.cp312-win_amd64.pyd
   TARGET_IMPLIB = libslaythespire.dll.a
-  TARGET_PDB = slaythespire.pdb
+  TARGET_PDB = slaythespire.cp312-win_amd64.pyd.dbg
   TARGET_SUPPORT_DIR = CMakeFiles\slaythespire.dir
 
 # =============================================================================
@@ -421,8 +358,6 @@ build CMakeFiles/main.dir/apps/main.cpp.obj: CXX_COMPILER__main_unscanned_ C$:/C
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/include
   OBJECT_DIR = CMakeFiles\main.dir
   OBJECT_FILE_DIR = CMakeFiles\main.dir\apps
-  TARGET_COMPILE_PDB = CMakeFiles\main.dir\
-  TARGET_PDB = main.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\main.dir
 
 build CMakeFiles/main.dir/src/combat/Actions.cpp.obj: CXX_COMPILER__main_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/combat/Actions.cpp || cmake_object_order_depends_target_main
@@ -431,8 +366,6 @@ build CMakeFiles/main.dir/src/combat/Actions.cpp.obj: CXX_COMPILER__main_unscann
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/include
   OBJECT_DIR = CMakeFiles\main.dir
   OBJECT_FILE_DIR = CMakeFiles\main.dir\src\combat
-  TARGET_COMPILE_PDB = CMakeFiles\main.dir\
-  TARGET_PDB = main.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\main.dir
 
 build CMakeFiles/main.dir/src/combat/BattleContext.cpp.obj: CXX_COMPILER__main_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/combat/BattleContext.cpp || cmake_object_order_depends_target_main
@@ -441,8 +374,6 @@ build CMakeFiles/main.dir/src/combat/BattleContext.cpp.obj: CXX_COMPILER__main_u
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/include
   OBJECT_DIR = CMakeFiles\main.dir
   OBJECT_FILE_DIR = CMakeFiles\main.dir\src\combat
-  TARGET_COMPILE_PDB = CMakeFiles\main.dir\
-  TARGET_PDB = main.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\main.dir
 
 build CMakeFiles/main.dir/src/combat/CardInstance.cpp.obj: CXX_COMPILER__main_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/combat/CardInstance.cpp || cmake_object_order_depends_target_main
@@ -451,8 +382,6 @@ build CMakeFiles/main.dir/src/combat/CardInstance.cpp.obj: CXX_COMPILER__main_un
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/include
   OBJECT_DIR = CMakeFiles\main.dir
   OBJECT_FILE_DIR = CMakeFiles\main.dir\src\combat
-  TARGET_COMPILE_PDB = CMakeFiles\main.dir\
-  TARGET_PDB = main.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\main.dir
 
 build CMakeFiles/main.dir/src/combat/CardManager.cpp.obj: CXX_COMPILER__main_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/combat/CardManager.cpp || cmake_object_order_depends_target_main
@@ -461,8 +390,6 @@ build CMakeFiles/main.dir/src/combat/CardManager.cpp.obj: CXX_COMPILER__main_uns
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/include
   OBJECT_DIR = CMakeFiles\main.dir
   OBJECT_FILE_DIR = CMakeFiles\main.dir\src\combat
-  TARGET_COMPILE_PDB = CMakeFiles\main.dir\
-  TARGET_PDB = main.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\main.dir
 
 build CMakeFiles/main.dir/src/combat/CardQueue.cpp.obj: CXX_COMPILER__main_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/combat/CardQueue.cpp || cmake_object_order_depends_target_main
@@ -471,8 +398,6 @@ build CMakeFiles/main.dir/src/combat/CardQueue.cpp.obj: CXX_COMPILER__main_unsca
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/include
   OBJECT_DIR = CMakeFiles\main.dir
   OBJECT_FILE_DIR = CMakeFiles\main.dir\src\combat
-  TARGET_COMPILE_PDB = CMakeFiles\main.dir\
-  TARGET_PDB = main.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\main.dir
 
 build CMakeFiles/main.dir/src/combat/Monster.cpp.obj: CXX_COMPILER__main_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/combat/Monster.cpp || cmake_object_order_depends_target_main
@@ -481,8 +406,6 @@ build CMakeFiles/main.dir/src/combat/Monster.cpp.obj: CXX_COMPILER__main_unscann
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/include
   OBJECT_DIR = CMakeFiles\main.dir
   OBJECT_FILE_DIR = CMakeFiles\main.dir\src\combat
-  TARGET_COMPILE_PDB = CMakeFiles\main.dir\
-  TARGET_PDB = main.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\main.dir
 
 build CMakeFiles/main.dir/src/combat/MonsterGroup.cpp.obj: CXX_COMPILER__main_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/combat/MonsterGroup.cpp || cmake_object_order_depends_target_main
@@ -491,8 +414,6 @@ build CMakeFiles/main.dir/src/combat/MonsterGroup.cpp.obj: CXX_COMPILER__main_un
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/include
   OBJECT_DIR = CMakeFiles\main.dir
   OBJECT_FILE_DIR = CMakeFiles\main.dir\src\combat
-  TARGET_COMPILE_PDB = CMakeFiles\main.dir\
-  TARGET_PDB = main.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\main.dir
 
 build CMakeFiles/main.dir/src/combat/MonsterMoveDamage.cpp.obj: CXX_COMPILER__main_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/combat/MonsterMoveDamage.cpp || cmake_object_order_depends_target_main
@@ -501,8 +422,6 @@ build CMakeFiles/main.dir/src/combat/MonsterMoveDamage.cpp.obj: CXX_COMPILER__ma
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/include
   OBJECT_DIR = CMakeFiles\main.dir
   OBJECT_FILE_DIR = CMakeFiles\main.dir\src\combat
-  TARGET_COMPILE_PDB = CMakeFiles\main.dir\
-  TARGET_PDB = main.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\main.dir
 
 build CMakeFiles/main.dir/src/combat/MonsterSpecific.cpp.obj: CXX_COMPILER__main_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/combat/MonsterSpecific.cpp || cmake_object_order_depends_target_main
@@ -511,8 +430,6 @@ build CMakeFiles/main.dir/src/combat/MonsterSpecific.cpp.obj: CXX_COMPILER__main
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/include
   OBJECT_DIR = CMakeFiles\main.dir
   OBJECT_FILE_DIR = CMakeFiles\main.dir\src\combat
-  TARGET_COMPILE_PDB = CMakeFiles\main.dir\
-  TARGET_PDB = main.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\main.dir
 
 build CMakeFiles/main.dir/src/combat/Player.cpp.obj: CXX_COMPILER__main_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/combat/Player.cpp || cmake_object_order_depends_target_main
@@ -521,8 +438,6 @@ build CMakeFiles/main.dir/src/combat/Player.cpp.obj: CXX_COMPILER__main_unscanne
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/include
   OBJECT_DIR = CMakeFiles\main.dir
   OBJECT_FILE_DIR = CMakeFiles\main.dir\src\combat
-  TARGET_COMPILE_PDB = CMakeFiles\main.dir\
-  TARGET_PDB = main.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\main.dir
 
 build CMakeFiles/main.dir/src/game/Card.cpp.obj: CXX_COMPILER__main_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/game/Card.cpp || cmake_object_order_depends_target_main
@@ -531,8 +446,6 @@ build CMakeFiles/main.dir/src/game/Card.cpp.obj: CXX_COMPILER__main_unscanned_ C
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/include
   OBJECT_DIR = CMakeFiles\main.dir
   OBJECT_FILE_DIR = CMakeFiles\main.dir\src\game
-  TARGET_COMPILE_PDB = CMakeFiles\main.dir\
-  TARGET_PDB = main.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\main.dir
 
 build CMakeFiles/main.dir/src/game/CombatReward.cpp.obj: CXX_COMPILER__main_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/game/CombatReward.cpp || cmake_object_order_depends_target_main
@@ -541,8 +454,6 @@ build CMakeFiles/main.dir/src/game/CombatReward.cpp.obj: CXX_COMPILER__main_unsc
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/include
   OBJECT_DIR = CMakeFiles\main.dir
   OBJECT_FILE_DIR = CMakeFiles\main.dir\src\game
-  TARGET_COMPILE_PDB = CMakeFiles\main.dir\
-  TARGET_PDB = main.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\main.dir
 
 build CMakeFiles/main.dir/src/game/Deck.cpp.obj: CXX_COMPILER__main_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/game/Deck.cpp || cmake_object_order_depends_target_main
@@ -551,8 +462,6 @@ build CMakeFiles/main.dir/src/game/Deck.cpp.obj: CXX_COMPILER__main_unscanned_ C
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/include
   OBJECT_DIR = CMakeFiles\main.dir
   OBJECT_FILE_DIR = CMakeFiles\main.dir\src\game
-  TARGET_COMPILE_PDB = CMakeFiles\main.dir\
-  TARGET_PDB = main.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\main.dir
 
 build CMakeFiles/main.dir/src/game/Game.cpp.obj: CXX_COMPILER__main_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/game/Game.cpp || cmake_object_order_depends_target_main
@@ -561,8 +470,6 @@ build CMakeFiles/main.dir/src/game/Game.cpp.obj: CXX_COMPILER__main_unscanned_ C
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/include
   OBJECT_DIR = CMakeFiles\main.dir
   OBJECT_FILE_DIR = CMakeFiles\main.dir\src\game
-  TARGET_COMPILE_PDB = CMakeFiles\main.dir\
-  TARGET_PDB = main.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\main.dir
 
 build CMakeFiles/main.dir/src/game/GameContext.cpp.obj: CXX_COMPILER__main_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/game/GameContext.cpp || cmake_object_order_depends_target_main
@@ -571,8 +478,6 @@ build CMakeFiles/main.dir/src/game/GameContext.cpp.obj: CXX_COMPILER__main_unsca
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/include
   OBJECT_DIR = CMakeFiles\main.dir
   OBJECT_FILE_DIR = CMakeFiles\main.dir\src\game
-  TARGET_COMPILE_PDB = CMakeFiles\main.dir\
-  TARGET_PDB = main.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\main.dir
 
 build CMakeFiles/main.dir/src/game/Map.cpp.obj: CXX_COMPILER__main_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/game/Map.cpp || cmake_object_order_depends_target_main
@@ -581,8 +486,6 @@ build CMakeFiles/main.dir/src/game/Map.cpp.obj: CXX_COMPILER__main_unscanned_ C$
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/include
   OBJECT_DIR = CMakeFiles\main.dir
   OBJECT_FILE_DIR = CMakeFiles\main.dir\src\game
-  TARGET_COMPILE_PDB = CMakeFiles\main.dir\
-  TARGET_PDB = main.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\main.dir
 
 build CMakeFiles/main.dir/src/game/Neow.cpp.obj: CXX_COMPILER__main_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/game/Neow.cpp || cmake_object_order_depends_target_main
@@ -591,8 +494,6 @@ build CMakeFiles/main.dir/src/game/Neow.cpp.obj: CXX_COMPILER__main_unscanned_ C
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/include
   OBJECT_DIR = CMakeFiles\main.dir
   OBJECT_FILE_DIR = CMakeFiles\main.dir\src\game
-  TARGET_COMPILE_PDB = CMakeFiles\main.dir\
-  TARGET_PDB = main.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\main.dir
 
 build CMakeFiles/main.dir/src/game/SaveFile.cpp.obj: CXX_COMPILER__main_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/game/SaveFile.cpp || cmake_object_order_depends_target_main
@@ -601,8 +502,6 @@ build CMakeFiles/main.dir/src/game/SaveFile.cpp.obj: CXX_COMPILER__main_unscanne
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/include
   OBJECT_DIR = CMakeFiles\main.dir
   OBJECT_FILE_DIR = CMakeFiles\main.dir\src\game
-  TARGET_COMPILE_PDB = CMakeFiles\main.dir\
-  TARGET_PDB = main.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\main.dir
 
 build CMakeFiles/main.dir/src/game/Shop.cpp.obj: CXX_COMPILER__main_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/game/Shop.cpp || cmake_object_order_depends_target_main
@@ -611,8 +510,6 @@ build CMakeFiles/main.dir/src/game/Shop.cpp.obj: CXX_COMPILER__main_unscanned_ C
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/include
   OBJECT_DIR = CMakeFiles\main.dir
   OBJECT_FILE_DIR = CMakeFiles\main.dir\src\game
-  TARGET_COMPILE_PDB = CMakeFiles\main.dir\
-  TARGET_PDB = main.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\main.dir
 
 build CMakeFiles/main.dir/src/sim/BattleSimulator.cpp.obj: CXX_COMPILER__main_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/sim/BattleSimulator.cpp || cmake_object_order_depends_target_main
@@ -621,8 +518,6 @@ build CMakeFiles/main.dir/src/sim/BattleSimulator.cpp.obj: CXX_COMPILER__main_un
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/include
   OBJECT_DIR = CMakeFiles\main.dir
   OBJECT_FILE_DIR = CMakeFiles\main.dir\src\sim
-  TARGET_COMPILE_PDB = CMakeFiles\main.dir\
-  TARGET_PDB = main.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\main.dir
 
 build CMakeFiles/main.dir/src/sim/ConsoleSimulator.cpp.obj: CXX_COMPILER__main_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/sim/ConsoleSimulator.cpp || cmake_object_order_depends_target_main
@@ -631,8 +526,6 @@ build CMakeFiles/main.dir/src/sim/ConsoleSimulator.cpp.obj: CXX_COMPILER__main_u
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/include
   OBJECT_DIR = CMakeFiles\main.dir
   OBJECT_FILE_DIR = CMakeFiles\main.dir\src\sim
-  TARGET_COMPILE_PDB = CMakeFiles\main.dir\
-  TARGET_PDB = main.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\main.dir
 
 build CMakeFiles/main.dir/src/sim/PrintHelpers.cpp.obj: CXX_COMPILER__main_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/sim/PrintHelpers.cpp || cmake_object_order_depends_target_main
@@ -641,8 +534,6 @@ build CMakeFiles/main.dir/src/sim/PrintHelpers.cpp.obj: CXX_COMPILER__main_unsca
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/include
   OBJECT_DIR = CMakeFiles\main.dir
   OBJECT_FILE_DIR = CMakeFiles\main.dir\src\sim
-  TARGET_COMPILE_PDB = CMakeFiles\main.dir\
-  TARGET_PDB = main.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\main.dir
 
 build CMakeFiles/main.dir/src/sim/SimHelpers.cpp.obj: CXX_COMPILER__main_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/sim/SimHelpers.cpp || cmake_object_order_depends_target_main
@@ -651,8 +542,6 @@ build CMakeFiles/main.dir/src/sim/SimHelpers.cpp.obj: CXX_COMPILER__main_unscann
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/include
   OBJECT_DIR = CMakeFiles\main.dir
   OBJECT_FILE_DIR = CMakeFiles\main.dir\src\sim
-  TARGET_COMPILE_PDB = CMakeFiles\main.dir\
-  TARGET_PDB = main.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\main.dir
 
 build CMakeFiles/main.dir/src/sim/search/Action.cpp.obj: CXX_COMPILER__main_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/sim/search/Action.cpp || cmake_object_order_depends_target_main
@@ -661,8 +550,6 @@ build CMakeFiles/main.dir/src/sim/search/Action.cpp.obj: CXX_COMPILER__main_unsc
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/include
   OBJECT_DIR = CMakeFiles\main.dir
   OBJECT_FILE_DIR = CMakeFiles\main.dir\src\sim\search
-  TARGET_COMPILE_PDB = CMakeFiles\main.dir\
-  TARGET_PDB = main.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\main.dir
 
 build CMakeFiles/main.dir/src/sim/search/BattleScumSearcher2.cpp.obj: CXX_COMPILER__main_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/sim/search/BattleScumSearcher2.cpp || cmake_object_order_depends_target_main
@@ -671,8 +558,6 @@ build CMakeFiles/main.dir/src/sim/search/BattleScumSearcher2.cpp.obj: CXX_COMPIL
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/include
   OBJECT_DIR = CMakeFiles\main.dir
   OBJECT_FILE_DIR = CMakeFiles\main.dir\src\sim\search
-  TARGET_COMPILE_PDB = CMakeFiles\main.dir\
-  TARGET_PDB = main.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\main.dir
 
 build CMakeFiles/main.dir/src/sim/search/ExpertKnowledge.cpp.obj: CXX_COMPILER__main_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/sim/search/ExpertKnowledge.cpp || cmake_object_order_depends_target_main
@@ -681,8 +566,6 @@ build CMakeFiles/main.dir/src/sim/search/ExpertKnowledge.cpp.obj: CXX_COMPILER__
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/include
   OBJECT_DIR = CMakeFiles\main.dir
   OBJECT_FILE_DIR = CMakeFiles\main.dir\src\sim\search
-  TARGET_COMPILE_PDB = CMakeFiles\main.dir\
-  TARGET_PDB = main.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\main.dir
 
 build CMakeFiles/main.dir/src/sim/search/GameAction.cpp.obj: CXX_COMPILER__main_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/sim/search/GameAction.cpp || cmake_object_order_depends_target_main
@@ -691,8 +574,6 @@ build CMakeFiles/main.dir/src/sim/search/GameAction.cpp.obj: CXX_COMPILER__main_
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/include
   OBJECT_DIR = CMakeFiles\main.dir
   OBJECT_FILE_DIR = CMakeFiles\main.dir\src\sim\search
-  TARGET_COMPILE_PDB = CMakeFiles\main.dir\
-  TARGET_PDB = main.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\main.dir
 
 build CMakeFiles/main.dir/src/sim/search/ScumSearchAgent2.cpp.obj: CXX_COMPILER__main_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/sim/search/ScumSearchAgent2.cpp || cmake_object_order_depends_target_main
@@ -701,8 +582,6 @@ build CMakeFiles/main.dir/src/sim/search/ScumSearchAgent2.cpp.obj: CXX_COMPILER_
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/include
   OBJECT_DIR = CMakeFiles\main.dir
   OBJECT_FILE_DIR = CMakeFiles\main.dir\src\sim\search
-  TARGET_COMPILE_PDB = CMakeFiles\main.dir\
-  TARGET_PDB = main.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\main.dir
 
 build CMakeFiles/main.dir/src/sim/search/SimpleAgent.cpp.obj: CXX_COMPILER__main_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/sim/search/SimpleAgent.cpp || cmake_object_order_depends_target_main
@@ -711,8 +590,6 @@ build CMakeFiles/main.dir/src/sim/search/SimpleAgent.cpp.obj: CXX_COMPILER__main
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/include
   OBJECT_DIR = CMakeFiles\main.dir
   OBJECT_FILE_DIR = CMakeFiles\main.dir\src\sim\search
-  TARGET_COMPILE_PDB = CMakeFiles\main.dir\
-  TARGET_PDB = main.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\main.dir
 
 
@@ -730,10 +607,9 @@ build main.exe: CXX_EXECUTABLE_LINKER__main_ CMakeFiles/main.dir/apps/main.cpp.o
   OBJECT_DIR = CMakeFiles\main.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\main.dir\
   TARGET_FILE = main.exe
   TARGET_IMPLIB = libmain.dll.a
-  TARGET_PDB = main.pdb
+  TARGET_PDB = main.exe.dbg
   TARGET_SUPPORT_DIR = CMakeFiles\main.dir
 
 # =============================================================================
@@ -751,8 +627,6 @@ build CMakeFiles/test.dir/apps/test.cpp.obj: CXX_COMPILER__test_unscanned_ C$:/C
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/include
   OBJECT_DIR = CMakeFiles\test.dir
   OBJECT_FILE_DIR = CMakeFiles\test.dir\apps
-  TARGET_COMPILE_PDB = CMakeFiles\test.dir\
-  TARGET_PDB = test.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\test.dir
 
 build CMakeFiles/test.dir/src/combat/Actions.cpp.obj: CXX_COMPILER__test_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/combat/Actions.cpp || cmake_object_order_depends_target_test
@@ -761,8 +635,6 @@ build CMakeFiles/test.dir/src/combat/Actions.cpp.obj: CXX_COMPILER__test_unscann
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/include
   OBJECT_DIR = CMakeFiles\test.dir
   OBJECT_FILE_DIR = CMakeFiles\test.dir\src\combat
-  TARGET_COMPILE_PDB = CMakeFiles\test.dir\
-  TARGET_PDB = test.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\test.dir
 
 build CMakeFiles/test.dir/src/combat/BattleContext.cpp.obj: CXX_COMPILER__test_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/combat/BattleContext.cpp || cmake_object_order_depends_target_test
@@ -771,8 +643,6 @@ build CMakeFiles/test.dir/src/combat/BattleContext.cpp.obj: CXX_COMPILER__test_u
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/include
   OBJECT_DIR = CMakeFiles\test.dir
   OBJECT_FILE_DIR = CMakeFiles\test.dir\src\combat
-  TARGET_COMPILE_PDB = CMakeFiles\test.dir\
-  TARGET_PDB = test.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\test.dir
 
 build CMakeFiles/test.dir/src/combat/CardInstance.cpp.obj: CXX_COMPILER__test_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/combat/CardInstance.cpp || cmake_object_order_depends_target_test
@@ -781,8 +651,6 @@ build CMakeFiles/test.dir/src/combat/CardInstance.cpp.obj: CXX_COMPILER__test_un
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/include
   OBJECT_DIR = CMakeFiles\test.dir
   OBJECT_FILE_DIR = CMakeFiles\test.dir\src\combat
-  TARGET_COMPILE_PDB = CMakeFiles\test.dir\
-  TARGET_PDB = test.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\test.dir
 
 build CMakeFiles/test.dir/src/combat/CardManager.cpp.obj: CXX_COMPILER__test_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/combat/CardManager.cpp || cmake_object_order_depends_target_test
@@ -791,8 +659,6 @@ build CMakeFiles/test.dir/src/combat/CardManager.cpp.obj: CXX_COMPILER__test_uns
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/include
   OBJECT_DIR = CMakeFiles\test.dir
   OBJECT_FILE_DIR = CMakeFiles\test.dir\src\combat
-  TARGET_COMPILE_PDB = CMakeFiles\test.dir\
-  TARGET_PDB = test.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\test.dir
 
 build CMakeFiles/test.dir/src/combat/CardQueue.cpp.obj: CXX_COMPILER__test_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/combat/CardQueue.cpp || cmake_object_order_depends_target_test
@@ -801,8 +667,6 @@ build CMakeFiles/test.dir/src/combat/CardQueue.cpp.obj: CXX_COMPILER__test_unsca
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/include
   OBJECT_DIR = CMakeFiles\test.dir
   OBJECT_FILE_DIR = CMakeFiles\test.dir\src\combat
-  TARGET_COMPILE_PDB = CMakeFiles\test.dir\
-  TARGET_PDB = test.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\test.dir
 
 build CMakeFiles/test.dir/src/combat/Monster.cpp.obj: CXX_COMPILER__test_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/combat/Monster.cpp || cmake_object_order_depends_target_test
@@ -811,8 +675,6 @@ build CMakeFiles/test.dir/src/combat/Monster.cpp.obj: CXX_COMPILER__test_unscann
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/include
   OBJECT_DIR = CMakeFiles\test.dir
   OBJECT_FILE_DIR = CMakeFiles\test.dir\src\combat
-  TARGET_COMPILE_PDB = CMakeFiles\test.dir\
-  TARGET_PDB = test.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\test.dir
 
 build CMakeFiles/test.dir/src/combat/MonsterGroup.cpp.obj: CXX_COMPILER__test_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/combat/MonsterGroup.cpp || cmake_object_order_depends_target_test
@@ -821,8 +683,6 @@ build CMakeFiles/test.dir/src/combat/MonsterGroup.cpp.obj: CXX_COMPILER__test_un
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/include
   OBJECT_DIR = CMakeFiles\test.dir
   OBJECT_FILE_DIR = CMakeFiles\test.dir\src\combat
-  TARGET_COMPILE_PDB = CMakeFiles\test.dir\
-  TARGET_PDB = test.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\test.dir
 
 build CMakeFiles/test.dir/src/combat/MonsterMoveDamage.cpp.obj: CXX_COMPILER__test_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/combat/MonsterMoveDamage.cpp || cmake_object_order_depends_target_test
@@ -831,8 +691,6 @@ build CMakeFiles/test.dir/src/combat/MonsterMoveDamage.cpp.obj: CXX_COMPILER__te
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/include
   OBJECT_DIR = CMakeFiles\test.dir
   OBJECT_FILE_DIR = CMakeFiles\test.dir\src\combat
-  TARGET_COMPILE_PDB = CMakeFiles\test.dir\
-  TARGET_PDB = test.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\test.dir
 
 build CMakeFiles/test.dir/src/combat/MonsterSpecific.cpp.obj: CXX_COMPILER__test_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/combat/MonsterSpecific.cpp || cmake_object_order_depends_target_test
@@ -841,8 +699,6 @@ build CMakeFiles/test.dir/src/combat/MonsterSpecific.cpp.obj: CXX_COMPILER__test
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/include
   OBJECT_DIR = CMakeFiles\test.dir
   OBJECT_FILE_DIR = CMakeFiles\test.dir\src\combat
-  TARGET_COMPILE_PDB = CMakeFiles\test.dir\
-  TARGET_PDB = test.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\test.dir
 
 build CMakeFiles/test.dir/src/combat/Player.cpp.obj: CXX_COMPILER__test_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/combat/Player.cpp || cmake_object_order_depends_target_test
@@ -851,8 +707,6 @@ build CMakeFiles/test.dir/src/combat/Player.cpp.obj: CXX_COMPILER__test_unscanne
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/include
   OBJECT_DIR = CMakeFiles\test.dir
   OBJECT_FILE_DIR = CMakeFiles\test.dir\src\combat
-  TARGET_COMPILE_PDB = CMakeFiles\test.dir\
-  TARGET_PDB = test.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\test.dir
 
 build CMakeFiles/test.dir/src/game/Card.cpp.obj: CXX_COMPILER__test_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/game/Card.cpp || cmake_object_order_depends_target_test
@@ -861,8 +715,6 @@ build CMakeFiles/test.dir/src/game/Card.cpp.obj: CXX_COMPILER__test_unscanned_ C
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/include
   OBJECT_DIR = CMakeFiles\test.dir
   OBJECT_FILE_DIR = CMakeFiles\test.dir\src\game
-  TARGET_COMPILE_PDB = CMakeFiles\test.dir\
-  TARGET_PDB = test.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\test.dir
 
 build CMakeFiles/test.dir/src/game/CombatReward.cpp.obj: CXX_COMPILER__test_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/game/CombatReward.cpp || cmake_object_order_depends_target_test
@@ -871,8 +723,6 @@ build CMakeFiles/test.dir/src/game/CombatReward.cpp.obj: CXX_COMPILER__test_unsc
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/include
   OBJECT_DIR = CMakeFiles\test.dir
   OBJECT_FILE_DIR = CMakeFiles\test.dir\src\game
-  TARGET_COMPILE_PDB = CMakeFiles\test.dir\
-  TARGET_PDB = test.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\test.dir
 
 build CMakeFiles/test.dir/src/game/Deck.cpp.obj: CXX_COMPILER__test_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/game/Deck.cpp || cmake_object_order_depends_target_test
@@ -881,8 +731,6 @@ build CMakeFiles/test.dir/src/game/Deck.cpp.obj: CXX_COMPILER__test_unscanned_ C
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/include
   OBJECT_DIR = CMakeFiles\test.dir
   OBJECT_FILE_DIR = CMakeFiles\test.dir\src\game
-  TARGET_COMPILE_PDB = CMakeFiles\test.dir\
-  TARGET_PDB = test.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\test.dir
 
 build CMakeFiles/test.dir/src/game/Game.cpp.obj: CXX_COMPILER__test_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/game/Game.cpp || cmake_object_order_depends_target_test
@@ -891,8 +739,6 @@ build CMakeFiles/test.dir/src/game/Game.cpp.obj: CXX_COMPILER__test_unscanned_ C
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/include
   OBJECT_DIR = CMakeFiles\test.dir
   OBJECT_FILE_DIR = CMakeFiles\test.dir\src\game
-  TARGET_COMPILE_PDB = CMakeFiles\test.dir\
-  TARGET_PDB = test.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\test.dir
 
 build CMakeFiles/test.dir/src/game/GameContext.cpp.obj: CXX_COMPILER__test_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/game/GameContext.cpp || cmake_object_order_depends_target_test
@@ -901,8 +747,6 @@ build CMakeFiles/test.dir/src/game/GameContext.cpp.obj: CXX_COMPILER__test_unsca
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/include
   OBJECT_DIR = CMakeFiles\test.dir
   OBJECT_FILE_DIR = CMakeFiles\test.dir\src\game
-  TARGET_COMPILE_PDB = CMakeFiles\test.dir\
-  TARGET_PDB = test.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\test.dir
 
 build CMakeFiles/test.dir/src/game/Map.cpp.obj: CXX_COMPILER__test_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/game/Map.cpp || cmake_object_order_depends_target_test
@@ -911,8 +755,6 @@ build CMakeFiles/test.dir/src/game/Map.cpp.obj: CXX_COMPILER__test_unscanned_ C$
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/include
   OBJECT_DIR = CMakeFiles\test.dir
   OBJECT_FILE_DIR = CMakeFiles\test.dir\src\game
-  TARGET_COMPILE_PDB = CMakeFiles\test.dir\
-  TARGET_PDB = test.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\test.dir
 
 build CMakeFiles/test.dir/src/game/Neow.cpp.obj: CXX_COMPILER__test_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/game/Neow.cpp || cmake_object_order_depends_target_test
@@ -921,8 +763,6 @@ build CMakeFiles/test.dir/src/game/Neow.cpp.obj: CXX_COMPILER__test_unscanned_ C
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/include
   OBJECT_DIR = CMakeFiles\test.dir
   OBJECT_FILE_DIR = CMakeFiles\test.dir\src\game
-  TARGET_COMPILE_PDB = CMakeFiles\test.dir\
-  TARGET_PDB = test.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\test.dir
 
 build CMakeFiles/test.dir/src/game/SaveFile.cpp.obj: CXX_COMPILER__test_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/game/SaveFile.cpp || cmake_object_order_depends_target_test
@@ -931,8 +771,6 @@ build CMakeFiles/test.dir/src/game/SaveFile.cpp.obj: CXX_COMPILER__test_unscanne
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/include
   OBJECT_DIR = CMakeFiles\test.dir
   OBJECT_FILE_DIR = CMakeFiles\test.dir\src\game
-  TARGET_COMPILE_PDB = CMakeFiles\test.dir\
-  TARGET_PDB = test.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\test.dir
 
 build CMakeFiles/test.dir/src/game/Shop.cpp.obj: CXX_COMPILER__test_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/game/Shop.cpp || cmake_object_order_depends_target_test
@@ -941,8 +779,6 @@ build CMakeFiles/test.dir/src/game/Shop.cpp.obj: CXX_COMPILER__test_unscanned_ C
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/include
   OBJECT_DIR = CMakeFiles\test.dir
   OBJECT_FILE_DIR = CMakeFiles\test.dir\src\game
-  TARGET_COMPILE_PDB = CMakeFiles\test.dir\
-  TARGET_PDB = test.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\test.dir
 
 build CMakeFiles/test.dir/src/sim/BattleSimulator.cpp.obj: CXX_COMPILER__test_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/sim/BattleSimulator.cpp || cmake_object_order_depends_target_test
@@ -951,8 +787,6 @@ build CMakeFiles/test.dir/src/sim/BattleSimulator.cpp.obj: CXX_COMPILER__test_un
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/include
   OBJECT_DIR = CMakeFiles\test.dir
   OBJECT_FILE_DIR = CMakeFiles\test.dir\src\sim
-  TARGET_COMPILE_PDB = CMakeFiles\test.dir\
-  TARGET_PDB = test.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\test.dir
 
 build CMakeFiles/test.dir/src/sim/ConsoleSimulator.cpp.obj: CXX_COMPILER__test_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/sim/ConsoleSimulator.cpp || cmake_object_order_depends_target_test
@@ -961,8 +795,6 @@ build CMakeFiles/test.dir/src/sim/ConsoleSimulator.cpp.obj: CXX_COMPILER__test_u
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/include
   OBJECT_DIR = CMakeFiles\test.dir
   OBJECT_FILE_DIR = CMakeFiles\test.dir\src\sim
-  TARGET_COMPILE_PDB = CMakeFiles\test.dir\
-  TARGET_PDB = test.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\test.dir
 
 build CMakeFiles/test.dir/src/sim/PrintHelpers.cpp.obj: CXX_COMPILER__test_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/sim/PrintHelpers.cpp || cmake_object_order_depends_target_test
@@ -971,8 +803,6 @@ build CMakeFiles/test.dir/src/sim/PrintHelpers.cpp.obj: CXX_COMPILER__test_unsca
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/include
   OBJECT_DIR = CMakeFiles\test.dir
   OBJECT_FILE_DIR = CMakeFiles\test.dir\src\sim
-  TARGET_COMPILE_PDB = CMakeFiles\test.dir\
-  TARGET_PDB = test.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\test.dir
 
 build CMakeFiles/test.dir/src/sim/SimHelpers.cpp.obj: CXX_COMPILER__test_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/sim/SimHelpers.cpp || cmake_object_order_depends_target_test
@@ -981,8 +811,6 @@ build CMakeFiles/test.dir/src/sim/SimHelpers.cpp.obj: CXX_COMPILER__test_unscann
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/include
   OBJECT_DIR = CMakeFiles\test.dir
   OBJECT_FILE_DIR = CMakeFiles\test.dir\src\sim
-  TARGET_COMPILE_PDB = CMakeFiles\test.dir\
-  TARGET_PDB = test.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\test.dir
 
 build CMakeFiles/test.dir/src/sim/search/Action.cpp.obj: CXX_COMPILER__test_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/sim/search/Action.cpp || cmake_object_order_depends_target_test
@@ -991,8 +819,6 @@ build CMakeFiles/test.dir/src/sim/search/Action.cpp.obj: CXX_COMPILER__test_unsc
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/include
   OBJECT_DIR = CMakeFiles\test.dir
   OBJECT_FILE_DIR = CMakeFiles\test.dir\src\sim\search
-  TARGET_COMPILE_PDB = CMakeFiles\test.dir\
-  TARGET_PDB = test.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\test.dir
 
 build CMakeFiles/test.dir/src/sim/search/BattleScumSearcher2.cpp.obj: CXX_COMPILER__test_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/sim/search/BattleScumSearcher2.cpp || cmake_object_order_depends_target_test
@@ -1001,8 +827,6 @@ build CMakeFiles/test.dir/src/sim/search/BattleScumSearcher2.cpp.obj: CXX_COMPIL
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/include
   OBJECT_DIR = CMakeFiles\test.dir
   OBJECT_FILE_DIR = CMakeFiles\test.dir\src\sim\search
-  TARGET_COMPILE_PDB = CMakeFiles\test.dir\
-  TARGET_PDB = test.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\test.dir
 
 build CMakeFiles/test.dir/src/sim/search/ExpertKnowledge.cpp.obj: CXX_COMPILER__test_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/sim/search/ExpertKnowledge.cpp || cmake_object_order_depends_target_test
@@ -1011,8 +835,6 @@ build CMakeFiles/test.dir/src/sim/search/ExpertKnowledge.cpp.obj: CXX_COMPILER__
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/include
   OBJECT_DIR = CMakeFiles\test.dir
   OBJECT_FILE_DIR = CMakeFiles\test.dir\src\sim\search
-  TARGET_COMPILE_PDB = CMakeFiles\test.dir\
-  TARGET_PDB = test.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\test.dir
 
 build CMakeFiles/test.dir/src/sim/search/GameAction.cpp.obj: CXX_COMPILER__test_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/sim/search/GameAction.cpp || cmake_object_order_depends_target_test
@@ -1021,8 +843,6 @@ build CMakeFiles/test.dir/src/sim/search/GameAction.cpp.obj: CXX_COMPILER__test_
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/include
   OBJECT_DIR = CMakeFiles\test.dir
   OBJECT_FILE_DIR = CMakeFiles\test.dir\src\sim\search
-  TARGET_COMPILE_PDB = CMakeFiles\test.dir\
-  TARGET_PDB = test.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\test.dir
 
 build CMakeFiles/test.dir/src/sim/search/ScumSearchAgent2.cpp.obj: CXX_COMPILER__test_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/sim/search/ScumSearchAgent2.cpp || cmake_object_order_depends_target_test
@@ -1031,8 +851,6 @@ build CMakeFiles/test.dir/src/sim/search/ScumSearchAgent2.cpp.obj: CXX_COMPILER_
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/include
   OBJECT_DIR = CMakeFiles\test.dir
   OBJECT_FILE_DIR = CMakeFiles\test.dir\src\sim\search
-  TARGET_COMPILE_PDB = CMakeFiles\test.dir\
-  TARGET_PDB = test.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\test.dir
 
 build CMakeFiles/test.dir/src/sim/search/SimpleAgent.cpp.obj: CXX_COMPILER__test_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/sim/search/SimpleAgent.cpp || cmake_object_order_depends_target_test
@@ -1041,8 +859,6 @@ build CMakeFiles/test.dir/src/sim/search/SimpleAgent.cpp.obj: CXX_COMPILER__test
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/include
   OBJECT_DIR = CMakeFiles\test.dir
   OBJECT_FILE_DIR = CMakeFiles\test.dir\src\sim\search
-  TARGET_COMPILE_PDB = CMakeFiles\test.dir\
-  TARGET_PDB = test.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\test.dir
 
 
@@ -1060,10 +876,9 @@ build test.exe: CXX_EXECUTABLE_LINKER__test_ CMakeFiles/test.dir/apps/test.cpp.o
   OBJECT_DIR = CMakeFiles\test.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\test.dir\
   TARGET_FILE = test.exe
   TARGET_IMPLIB = libtest.dll.a
-  TARGET_PDB = test.pdb
+  TARGET_PDB = test.exe.dbg
   TARGET_SUPPORT_DIR = CMakeFiles\test.dir
 
 # =============================================================================
@@ -1081,8 +896,6 @@ build CMakeFiles/small-test.dir/apps/small-test.cpp.obj: CXX_COMPILER__small-tes
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/bindings
   OBJECT_DIR = CMakeFiles\small-test.dir
   OBJECT_FILE_DIR = CMakeFiles\small-test.dir\apps
-  TARGET_COMPILE_PDB = CMakeFiles\small-test.dir\
-  TARGET_PDB = small-test.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\small-test.dir
 
 build CMakeFiles/small-test.dir/bindings/bindings-util.cpp.obj: CXX_COMPILER__small-test_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/bindings/bindings-util.cpp || cmake_object_order_depends_target_small-test
@@ -1091,8 +904,6 @@ build CMakeFiles/small-test.dir/bindings/bindings-util.cpp.obj: CXX_COMPILER__sm
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/bindings
   OBJECT_DIR = CMakeFiles\small-test.dir
   OBJECT_FILE_DIR = CMakeFiles\small-test.dir\bindings
-  TARGET_COMPILE_PDB = CMakeFiles\small-test.dir\
-  TARGET_PDB = small-test.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\small-test.dir
 
 build CMakeFiles/small-test.dir/src/combat/Actions.cpp.obj: CXX_COMPILER__small-test_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/combat/Actions.cpp || cmake_object_order_depends_target_small-test
@@ -1101,8 +912,6 @@ build CMakeFiles/small-test.dir/src/combat/Actions.cpp.obj: CXX_COMPILER__small-
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/bindings
   OBJECT_DIR = CMakeFiles\small-test.dir
   OBJECT_FILE_DIR = CMakeFiles\small-test.dir\src\combat
-  TARGET_COMPILE_PDB = CMakeFiles\small-test.dir\
-  TARGET_PDB = small-test.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\small-test.dir
 
 build CMakeFiles/small-test.dir/src/combat/BattleContext.cpp.obj: CXX_COMPILER__small-test_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/combat/BattleContext.cpp || cmake_object_order_depends_target_small-test
@@ -1111,8 +920,6 @@ build CMakeFiles/small-test.dir/src/combat/BattleContext.cpp.obj: CXX_COMPILER__
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/bindings
   OBJECT_DIR = CMakeFiles\small-test.dir
   OBJECT_FILE_DIR = CMakeFiles\small-test.dir\src\combat
-  TARGET_COMPILE_PDB = CMakeFiles\small-test.dir\
-  TARGET_PDB = small-test.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\small-test.dir
 
 build CMakeFiles/small-test.dir/src/combat/CardInstance.cpp.obj: CXX_COMPILER__small-test_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/combat/CardInstance.cpp || cmake_object_order_depends_target_small-test
@@ -1121,8 +928,6 @@ build CMakeFiles/small-test.dir/src/combat/CardInstance.cpp.obj: CXX_COMPILER__s
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/bindings
   OBJECT_DIR = CMakeFiles\small-test.dir
   OBJECT_FILE_DIR = CMakeFiles\small-test.dir\src\combat
-  TARGET_COMPILE_PDB = CMakeFiles\small-test.dir\
-  TARGET_PDB = small-test.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\small-test.dir
 
 build CMakeFiles/small-test.dir/src/combat/CardManager.cpp.obj: CXX_COMPILER__small-test_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/combat/CardManager.cpp || cmake_object_order_depends_target_small-test
@@ -1131,8 +936,6 @@ build CMakeFiles/small-test.dir/src/combat/CardManager.cpp.obj: CXX_COMPILER__sm
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/bindings
   OBJECT_DIR = CMakeFiles\small-test.dir
   OBJECT_FILE_DIR = CMakeFiles\small-test.dir\src\combat
-  TARGET_COMPILE_PDB = CMakeFiles\small-test.dir\
-  TARGET_PDB = small-test.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\small-test.dir
 
 build CMakeFiles/small-test.dir/src/combat/CardQueue.cpp.obj: CXX_COMPILER__small-test_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/combat/CardQueue.cpp || cmake_object_order_depends_target_small-test
@@ -1141,8 +944,6 @@ build CMakeFiles/small-test.dir/src/combat/CardQueue.cpp.obj: CXX_COMPILER__smal
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/bindings
   OBJECT_DIR = CMakeFiles\small-test.dir
   OBJECT_FILE_DIR = CMakeFiles\small-test.dir\src\combat
-  TARGET_COMPILE_PDB = CMakeFiles\small-test.dir\
-  TARGET_PDB = small-test.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\small-test.dir
 
 build CMakeFiles/small-test.dir/src/combat/Monster.cpp.obj: CXX_COMPILER__small-test_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/combat/Monster.cpp || cmake_object_order_depends_target_small-test
@@ -1151,8 +952,6 @@ build CMakeFiles/small-test.dir/src/combat/Monster.cpp.obj: CXX_COMPILER__small-
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/bindings
   OBJECT_DIR = CMakeFiles\small-test.dir
   OBJECT_FILE_DIR = CMakeFiles\small-test.dir\src\combat
-  TARGET_COMPILE_PDB = CMakeFiles\small-test.dir\
-  TARGET_PDB = small-test.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\small-test.dir
 
 build CMakeFiles/small-test.dir/src/combat/MonsterGroup.cpp.obj: CXX_COMPILER__small-test_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/combat/MonsterGroup.cpp || cmake_object_order_depends_target_small-test
@@ -1161,8 +960,6 @@ build CMakeFiles/small-test.dir/src/combat/MonsterGroup.cpp.obj: CXX_COMPILER__s
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/bindings
   OBJECT_DIR = CMakeFiles\small-test.dir
   OBJECT_FILE_DIR = CMakeFiles\small-test.dir\src\combat
-  TARGET_COMPILE_PDB = CMakeFiles\small-test.dir\
-  TARGET_PDB = small-test.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\small-test.dir
 
 build CMakeFiles/small-test.dir/src/combat/MonsterMoveDamage.cpp.obj: CXX_COMPILER__small-test_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/combat/MonsterMoveDamage.cpp || cmake_object_order_depends_target_small-test
@@ -1171,8 +968,6 @@ build CMakeFiles/small-test.dir/src/combat/MonsterMoveDamage.cpp.obj: CXX_COMPIL
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/bindings
   OBJECT_DIR = CMakeFiles\small-test.dir
   OBJECT_FILE_DIR = CMakeFiles\small-test.dir\src\combat
-  TARGET_COMPILE_PDB = CMakeFiles\small-test.dir\
-  TARGET_PDB = small-test.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\small-test.dir
 
 build CMakeFiles/small-test.dir/src/combat/MonsterSpecific.cpp.obj: CXX_COMPILER__small-test_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/combat/MonsterSpecific.cpp || cmake_object_order_depends_target_small-test
@@ -1181,8 +976,6 @@ build CMakeFiles/small-test.dir/src/combat/MonsterSpecific.cpp.obj: CXX_COMPILER
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/bindings
   OBJECT_DIR = CMakeFiles\small-test.dir
   OBJECT_FILE_DIR = CMakeFiles\small-test.dir\src\combat
-  TARGET_COMPILE_PDB = CMakeFiles\small-test.dir\
-  TARGET_PDB = small-test.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\small-test.dir
 
 build CMakeFiles/small-test.dir/src/combat/Player.cpp.obj: CXX_COMPILER__small-test_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/combat/Player.cpp || cmake_object_order_depends_target_small-test
@@ -1191,8 +984,6 @@ build CMakeFiles/small-test.dir/src/combat/Player.cpp.obj: CXX_COMPILER__small-t
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/bindings
   OBJECT_DIR = CMakeFiles\small-test.dir
   OBJECT_FILE_DIR = CMakeFiles\small-test.dir\src\combat
-  TARGET_COMPILE_PDB = CMakeFiles\small-test.dir\
-  TARGET_PDB = small-test.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\small-test.dir
 
 build CMakeFiles/small-test.dir/src/game/Card.cpp.obj: CXX_COMPILER__small-test_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/game/Card.cpp || cmake_object_order_depends_target_small-test
@@ -1201,8 +992,6 @@ build CMakeFiles/small-test.dir/src/game/Card.cpp.obj: CXX_COMPILER__small-test_
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/bindings
   OBJECT_DIR = CMakeFiles\small-test.dir
   OBJECT_FILE_DIR = CMakeFiles\small-test.dir\src\game
-  TARGET_COMPILE_PDB = CMakeFiles\small-test.dir\
-  TARGET_PDB = small-test.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\small-test.dir
 
 build CMakeFiles/small-test.dir/src/game/CombatReward.cpp.obj: CXX_COMPILER__small-test_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/game/CombatReward.cpp || cmake_object_order_depends_target_small-test
@@ -1211,8 +1000,6 @@ build CMakeFiles/small-test.dir/src/game/CombatReward.cpp.obj: CXX_COMPILER__sma
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/bindings
   OBJECT_DIR = CMakeFiles\small-test.dir
   OBJECT_FILE_DIR = CMakeFiles\small-test.dir\src\game
-  TARGET_COMPILE_PDB = CMakeFiles\small-test.dir\
-  TARGET_PDB = small-test.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\small-test.dir
 
 build CMakeFiles/small-test.dir/src/game/Deck.cpp.obj: CXX_COMPILER__small-test_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/game/Deck.cpp || cmake_object_order_depends_target_small-test
@@ -1221,8 +1008,6 @@ build CMakeFiles/small-test.dir/src/game/Deck.cpp.obj: CXX_COMPILER__small-test_
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/bindings
   OBJECT_DIR = CMakeFiles\small-test.dir
   OBJECT_FILE_DIR = CMakeFiles\small-test.dir\src\game
-  TARGET_COMPILE_PDB = CMakeFiles\small-test.dir\
-  TARGET_PDB = small-test.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\small-test.dir
 
 build CMakeFiles/small-test.dir/src/game/Game.cpp.obj: CXX_COMPILER__small-test_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/game/Game.cpp || cmake_object_order_depends_target_small-test
@@ -1231,8 +1016,6 @@ build CMakeFiles/small-test.dir/src/game/Game.cpp.obj: CXX_COMPILER__small-test_
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/bindings
   OBJECT_DIR = CMakeFiles\small-test.dir
   OBJECT_FILE_DIR = CMakeFiles\small-test.dir\src\game
-  TARGET_COMPILE_PDB = CMakeFiles\small-test.dir\
-  TARGET_PDB = small-test.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\small-test.dir
 
 build CMakeFiles/small-test.dir/src/game/GameContext.cpp.obj: CXX_COMPILER__small-test_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/game/GameContext.cpp || cmake_object_order_depends_target_small-test
@@ -1241,8 +1024,6 @@ build CMakeFiles/small-test.dir/src/game/GameContext.cpp.obj: CXX_COMPILER__smal
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/bindings
   OBJECT_DIR = CMakeFiles\small-test.dir
   OBJECT_FILE_DIR = CMakeFiles\small-test.dir\src\game
-  TARGET_COMPILE_PDB = CMakeFiles\small-test.dir\
-  TARGET_PDB = small-test.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\small-test.dir
 
 build CMakeFiles/small-test.dir/src/game/Map.cpp.obj: CXX_COMPILER__small-test_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/game/Map.cpp || cmake_object_order_depends_target_small-test
@@ -1251,8 +1032,6 @@ build CMakeFiles/small-test.dir/src/game/Map.cpp.obj: CXX_COMPILER__small-test_u
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/bindings
   OBJECT_DIR = CMakeFiles\small-test.dir
   OBJECT_FILE_DIR = CMakeFiles\small-test.dir\src\game
-  TARGET_COMPILE_PDB = CMakeFiles\small-test.dir\
-  TARGET_PDB = small-test.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\small-test.dir
 
 build CMakeFiles/small-test.dir/src/game/Neow.cpp.obj: CXX_COMPILER__small-test_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/game/Neow.cpp || cmake_object_order_depends_target_small-test
@@ -1261,8 +1040,6 @@ build CMakeFiles/small-test.dir/src/game/Neow.cpp.obj: CXX_COMPILER__small-test_
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/bindings
   OBJECT_DIR = CMakeFiles\small-test.dir
   OBJECT_FILE_DIR = CMakeFiles\small-test.dir\src\game
-  TARGET_COMPILE_PDB = CMakeFiles\small-test.dir\
-  TARGET_PDB = small-test.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\small-test.dir
 
 build CMakeFiles/small-test.dir/src/game/SaveFile.cpp.obj: CXX_COMPILER__small-test_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/game/SaveFile.cpp || cmake_object_order_depends_target_small-test
@@ -1271,8 +1048,6 @@ build CMakeFiles/small-test.dir/src/game/SaveFile.cpp.obj: CXX_COMPILER__small-t
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/bindings
   OBJECT_DIR = CMakeFiles\small-test.dir
   OBJECT_FILE_DIR = CMakeFiles\small-test.dir\src\game
-  TARGET_COMPILE_PDB = CMakeFiles\small-test.dir\
-  TARGET_PDB = small-test.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\small-test.dir
 
 build CMakeFiles/small-test.dir/src/game/Shop.cpp.obj: CXX_COMPILER__small-test_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/game/Shop.cpp || cmake_object_order_depends_target_small-test
@@ -1281,8 +1056,6 @@ build CMakeFiles/small-test.dir/src/game/Shop.cpp.obj: CXX_COMPILER__small-test_
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/bindings
   OBJECT_DIR = CMakeFiles\small-test.dir
   OBJECT_FILE_DIR = CMakeFiles\small-test.dir\src\game
-  TARGET_COMPILE_PDB = CMakeFiles\small-test.dir\
-  TARGET_PDB = small-test.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\small-test.dir
 
 build CMakeFiles/small-test.dir/src/sim/BattleSimulator.cpp.obj: CXX_COMPILER__small-test_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/sim/BattleSimulator.cpp || cmake_object_order_depends_target_small-test
@@ -1291,8 +1064,6 @@ build CMakeFiles/small-test.dir/src/sim/BattleSimulator.cpp.obj: CXX_COMPILER__s
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/bindings
   OBJECT_DIR = CMakeFiles\small-test.dir
   OBJECT_FILE_DIR = CMakeFiles\small-test.dir\src\sim
-  TARGET_COMPILE_PDB = CMakeFiles\small-test.dir\
-  TARGET_PDB = small-test.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\small-test.dir
 
 build CMakeFiles/small-test.dir/src/sim/ConsoleSimulator.cpp.obj: CXX_COMPILER__small-test_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/sim/ConsoleSimulator.cpp || cmake_object_order_depends_target_small-test
@@ -1301,8 +1072,6 @@ build CMakeFiles/small-test.dir/src/sim/ConsoleSimulator.cpp.obj: CXX_COMPILER__
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/bindings
   OBJECT_DIR = CMakeFiles\small-test.dir
   OBJECT_FILE_DIR = CMakeFiles\small-test.dir\src\sim
-  TARGET_COMPILE_PDB = CMakeFiles\small-test.dir\
-  TARGET_PDB = small-test.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\small-test.dir
 
 build CMakeFiles/small-test.dir/src/sim/PrintHelpers.cpp.obj: CXX_COMPILER__small-test_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/sim/PrintHelpers.cpp || cmake_object_order_depends_target_small-test
@@ -1311,8 +1080,6 @@ build CMakeFiles/small-test.dir/src/sim/PrintHelpers.cpp.obj: CXX_COMPILER__smal
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/bindings
   OBJECT_DIR = CMakeFiles\small-test.dir
   OBJECT_FILE_DIR = CMakeFiles\small-test.dir\src\sim
-  TARGET_COMPILE_PDB = CMakeFiles\small-test.dir\
-  TARGET_PDB = small-test.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\small-test.dir
 
 build CMakeFiles/small-test.dir/src/sim/SimHelpers.cpp.obj: CXX_COMPILER__small-test_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/sim/SimHelpers.cpp || cmake_object_order_depends_target_small-test
@@ -1321,8 +1088,6 @@ build CMakeFiles/small-test.dir/src/sim/SimHelpers.cpp.obj: CXX_COMPILER__small-
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/bindings
   OBJECT_DIR = CMakeFiles\small-test.dir
   OBJECT_FILE_DIR = CMakeFiles\small-test.dir\src\sim
-  TARGET_COMPILE_PDB = CMakeFiles\small-test.dir\
-  TARGET_PDB = small-test.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\small-test.dir
 
 build CMakeFiles/small-test.dir/src/sim/search/Action.cpp.obj: CXX_COMPILER__small-test_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/sim/search/Action.cpp || cmake_object_order_depends_target_small-test
@@ -1331,8 +1096,6 @@ build CMakeFiles/small-test.dir/src/sim/search/Action.cpp.obj: CXX_COMPILER__sma
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/bindings
   OBJECT_DIR = CMakeFiles\small-test.dir
   OBJECT_FILE_DIR = CMakeFiles\small-test.dir\src\sim\search
-  TARGET_COMPILE_PDB = CMakeFiles\small-test.dir\
-  TARGET_PDB = small-test.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\small-test.dir
 
 build CMakeFiles/small-test.dir/src/sim/search/BattleScumSearcher2.cpp.obj: CXX_COMPILER__small-test_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/sim/search/BattleScumSearcher2.cpp || cmake_object_order_depends_target_small-test
@@ -1341,8 +1104,6 @@ build CMakeFiles/small-test.dir/src/sim/search/BattleScumSearcher2.cpp.obj: CXX_
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/bindings
   OBJECT_DIR = CMakeFiles\small-test.dir
   OBJECT_FILE_DIR = CMakeFiles\small-test.dir\src\sim\search
-  TARGET_COMPILE_PDB = CMakeFiles\small-test.dir\
-  TARGET_PDB = small-test.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\small-test.dir
 
 build CMakeFiles/small-test.dir/src/sim/search/ExpertKnowledge.cpp.obj: CXX_COMPILER__small-test_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/sim/search/ExpertKnowledge.cpp || cmake_object_order_depends_target_small-test
@@ -1351,8 +1112,6 @@ build CMakeFiles/small-test.dir/src/sim/search/ExpertKnowledge.cpp.obj: CXX_COMP
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/bindings
   OBJECT_DIR = CMakeFiles\small-test.dir
   OBJECT_FILE_DIR = CMakeFiles\small-test.dir\src\sim\search
-  TARGET_COMPILE_PDB = CMakeFiles\small-test.dir\
-  TARGET_PDB = small-test.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\small-test.dir
 
 build CMakeFiles/small-test.dir/src/sim/search/GameAction.cpp.obj: CXX_COMPILER__small-test_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/sim/search/GameAction.cpp || cmake_object_order_depends_target_small-test
@@ -1361,8 +1120,6 @@ build CMakeFiles/small-test.dir/src/sim/search/GameAction.cpp.obj: CXX_COMPILER_
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/bindings
   OBJECT_DIR = CMakeFiles\small-test.dir
   OBJECT_FILE_DIR = CMakeFiles\small-test.dir\src\sim\search
-  TARGET_COMPILE_PDB = CMakeFiles\small-test.dir\
-  TARGET_PDB = small-test.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\small-test.dir
 
 build CMakeFiles/small-test.dir/src/sim/search/ScumSearchAgent2.cpp.obj: CXX_COMPILER__small-test_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/sim/search/ScumSearchAgent2.cpp || cmake_object_order_depends_target_small-test
@@ -1371,8 +1128,6 @@ build CMakeFiles/small-test.dir/src/sim/search/ScumSearchAgent2.cpp.obj: CXX_COM
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/bindings
   OBJECT_DIR = CMakeFiles\small-test.dir
   OBJECT_FILE_DIR = CMakeFiles\small-test.dir\src\sim\search
-  TARGET_COMPILE_PDB = CMakeFiles\small-test.dir\
-  TARGET_PDB = small-test.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\small-test.dir
 
 build CMakeFiles/small-test.dir/src/sim/search/SimpleAgent.cpp.obj: CXX_COMPILER__small-test_unscanned_ C$:/Code/SlayTheSpireAI/sts_lightspeed/src/sim/search/SimpleAgent.cpp || cmake_object_order_depends_target_small-test
@@ -1381,8 +1136,6 @@ build CMakeFiles/small-test.dir/src/sim/search/SimpleAgent.cpp.obj: CXX_COMPILER
   INCLUDES = -IC:/Code/SlayTheSpireAI/sts_lightspeed/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/json/include -IC:/Code/SlayTheSpireAI/sts_lightspeed/bindings
   OBJECT_DIR = CMakeFiles\small-test.dir
   OBJECT_FILE_DIR = CMakeFiles\small-test.dir\src\sim\search
-  TARGET_COMPILE_PDB = CMakeFiles\small-test.dir\
-  TARGET_PDB = small-test.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\small-test.dir
 
 
@@ -1400,10 +1153,9 @@ build small-test.exe: CXX_EXECUTABLE_LINKER__small-test_ CMakeFiles/small-test.d
   OBJECT_DIR = CMakeFiles\small-test.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\small-test.dir\
   TARGET_FILE = small-test.exe
   TARGET_IMPLIB = libsmall-test.dll.a
-  TARGET_PDB = small-test.pdb
+  TARGET_PDB = small-test.exe.dbg
   TARGET_SUPPORT_DIR = CMakeFiles\small-test.dir
 
 
@@ -1541,14 +1293,14 @@ build C$:/Code/SlayTheSpireAI/sts_lightspeed/build_py/CMakeFiles/cmake.verify_gl
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja C$:/Code/SlayTheSpireAI/sts_lightspeed/build_py/cmake_install.cmake C$:/Code/SlayTheSpireAI/sts_lightspeed/build_py/json/cmake_install.cmake C$:/Code/SlayTheSpireAI/sts_lightspeed/build_py/pybind11/cmake_install.cmake: RERUN_CMAKE C$:/Code/SlayTheSpireAI/sts_lightspeed/build_py/CMakeFiles/cmake.verify_globs | C$:/Code/SlayTheSpireAI/sts_lightspeed/build_py/CMakeFiles/VerifyGlobs.cmake C$:/Code/SlayTheSpireAI/sts_lightspeed/CMakeLists.txt C$:/Code/SlayTheSpireAI/sts_lightspeed/json/CMakeLists.txt C$:/Code/SlayTheSpireAI/sts_lightspeed/json/cmake/config.cmake.in C$:/Code/SlayTheSpireAI/sts_lightspeed/json/cmake/nlohmann_jsonConfigVersion.cmake.in C$:/Code/SlayTheSpireAI/sts_lightspeed/json/cmake/pkg-config.pc.in C$:/Code/SlayTheSpireAI/sts_lightspeed/pybind11/CMakeLists.txt C$:/Code/SlayTheSpireAI/sts_lightspeed/pybind11/tools/FindPythonLibsNew.cmake C$:/Code/SlayTheSpireAI/sts_lightspeed/pybind11/tools/JoinPaths.cmake C$:/Code/SlayTheSpireAI/sts_lightspeed/pybind11/tools/pybind11Common.cmake C$:/Code/SlayTheSpireAI/sts_lightspeed/pybind11/tools/pybind11Tools.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeCXXCompiler.cmake.in C$:/msys64/mingw64/share/cmake/Modules/CMakeCXXCompilerABI.cpp C$:/msys64/mingw64/share/cmake/Modules/CMakeCXXInformation.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeCommonLanguageInclude.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeCompilerIdDetection.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeDependentOption.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCompilerABI.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCompilerId.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCompilerSupport.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeDetermineRCCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeDetermineSystem.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeFindBinUtils.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeGenericSystem.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeInitializeConfigs.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeLanguageInformation.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeNinjaFindMake.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakePackageConfigHelpers.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeParseArguments.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeParseImplicitIncludeInfo.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeParseImplicitLinkInfo.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeParseLibraryArchitecture.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeRCCompiler.cmake.in C$:/msys64/mingw64/share/cmake/Modules/CMakeRCInformation.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeSystem.cmake.in C$:/msys64/mingw64/share/cmake/Modules/CMakeSystemSpecificInformation.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeTestCXXCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeTestCompilerCommon.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeTestRCCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/CheckCXXCompilerFlag.cmake C$:/msys64/mingw64/share/cmake/Modules/CheckCXXSourceCompiles.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/ADSP-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/ARMCC-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/ARMClang-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/AppleClang-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/Borland-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/Clang-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/Clang-DetermineCompilerInternal.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/Cray-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/CrayClang-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/Diab-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/Embarcadero-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/Fujitsu-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/GHS-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/GNU-CXX-CXXImportStd.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/GNU-CXX.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/GNU.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/HP-CXX-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/IAR-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/Intel-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/MSVC-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/NVHPC-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/NVIDIA-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/OrangeC-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/PGI-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/PathScale-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/Renesas-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/SCO-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/TI-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/TIClang-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/Tasking-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/Watcom-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/XL-CXX-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/ExternalProject.cmake C$:/msys64/mingw64/share/cmake/Modules/ExternalProject/shared_internal_commands.cmake C$:/msys64/mingw64/share/cmake/Modules/FindPackageHandleStandardArgs.cmake C$:/msys64/mingw64/share/cmake/Modules/FindPackageMessage.cmake C$:/msys64/mingw64/share/cmake/Modules/FindPythonInterp.cmake C$:/msys64/mingw64/share/cmake/Modules/GNUInstallDirs.cmake C$:/msys64/mingw64/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake C$:/msys64/mingw64/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake C$:/msys64/mingw64/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake C$:/msys64/mingw64/share/cmake/Modules/Internal/CMakeInspectCXXLinker.cmake C$:/msys64/mingw64/share/cmake/Modules/Internal/CheckCompilerFlag.cmake C$:/msys64/mingw64/share/cmake/Modules/Internal/CheckFlagCommonConfig.cmake C$:/msys64/mingw64/share/cmake/Modules/Internal/CheckSourceCompiles.cmake C$:/msys64/mingw64/share/cmake/Modules/Internal/FeatureTesting.cmake C$:/msys64/mingw64/share/cmake/Modules/Linker/GNU-CXX.cmake C$:/msys64/mingw64/share/cmake/Modules/Linker/GNU.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Linker/GNU.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Linker/Windows-GNU-CXX.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Linker/Windows-GNU.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Windows-Determine-CXX.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Windows-GNU-CXX.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Windows-GNU.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Windows-Initialize.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Windows-windres.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Windows.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/WindowsPaths.cmake C$:/msys64/mingw64/share/cmake/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/4.2.3/CMakeCXXCompiler.cmake CMakeFiles/4.2.3/CMakeRCCompiler.cmake CMakeFiles/4.2.3/CMakeSystem.cmake
+build build.ninja C$:/Code/SlayTheSpireAI/sts_lightspeed/build_py/cmake_install.cmake C$:/Code/SlayTheSpireAI/sts_lightspeed/build_py/json/cmake_install.cmake C$:/Code/SlayTheSpireAI/sts_lightspeed/build_py/pybind11/cmake_install.cmake: RERUN_CMAKE C$:/Code/SlayTheSpireAI/sts_lightspeed/build_py/CMakeFiles/cmake.verify_globs | C$:/Code/SlayTheSpireAI/sts_lightspeed/build_py/CMakeFiles/VerifyGlobs.cmake C$:/Code/SlayTheSpireAI/sts_lightspeed/CMakeLists.txt C$:/Code/SlayTheSpireAI/sts_lightspeed/json/CMakeLists.txt C$:/Code/SlayTheSpireAI/sts_lightspeed/json/cmake/config.cmake.in C$:/Code/SlayTheSpireAI/sts_lightspeed/json/cmake/nlohmann_jsonConfigVersion.cmake.in C$:/Code/SlayTheSpireAI/sts_lightspeed/json/cmake/pkg-config.pc.in C$:/Code/SlayTheSpireAI/sts_lightspeed/pybind11/CMakeLists.txt C$:/Code/SlayTheSpireAI/sts_lightspeed/pybind11/tools/FindPythonLibsNew.cmake C$:/Code/SlayTheSpireAI/sts_lightspeed/pybind11/tools/JoinPaths.cmake C$:/Code/SlayTheSpireAI/sts_lightspeed/pybind11/tools/pybind11Common.cmake C$:/Code/SlayTheSpireAI/sts_lightspeed/pybind11/tools/pybind11Tools.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeCXXInformation.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeCommonLanguageInclude.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeDependentOption.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeGenericSystem.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeInitializeConfigs.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeLanguageInformation.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakePackageConfigHelpers.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeParseArguments.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeRCInformation.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeSystemSpecificInformation.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake C$:/msys64/mingw64/share/cmake/Modules/CheckCXXCompilerFlag.cmake C$:/msys64/mingw64/share/cmake/Modules/CheckCXXSourceCompiles.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/GNU-CXX.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/GNU.cmake C$:/msys64/mingw64/share/cmake/Modules/ExternalProject.cmake C$:/msys64/mingw64/share/cmake/Modules/ExternalProject/shared_internal_commands.cmake C$:/msys64/mingw64/share/cmake/Modules/FindPackageHandleStandardArgs.cmake C$:/msys64/mingw64/share/cmake/Modules/FindPackageMessage.cmake C$:/msys64/mingw64/share/cmake/Modules/FindPythonInterp.cmake C$:/msys64/mingw64/share/cmake/Modules/GNUInstallDirs.cmake C$:/msys64/mingw64/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake C$:/msys64/mingw64/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake C$:/msys64/mingw64/share/cmake/Modules/Internal/CheckCompilerFlag.cmake C$:/msys64/mingw64/share/cmake/Modules/Internal/CheckFlagCommonConfig.cmake C$:/msys64/mingw64/share/cmake/Modules/Internal/CheckSourceCompiles.cmake C$:/msys64/mingw64/share/cmake/Modules/Linker/GNU-CXX.cmake C$:/msys64/mingw64/share/cmake/Modules/Linker/GNU.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Linker/GNU.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Linker/Windows-GNU-CXX.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Linker/Windows-GNU.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Windows-GNU-CXX.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Windows-GNU.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Windows-Initialize.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Windows-windres.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Windows.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/WindowsPaths.cmake C$:/msys64/mingw64/share/cmake/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/4.2.3/CMakeCXXCompiler.cmake CMakeFiles/4.2.3/CMakeRCCompiler.cmake CMakeFiles/4.2.3/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:/Code/SlayTheSpireAI/sts_lightspeed/build_py/CMakeFiles/VerifyGlobs.cmake C$:/Code/SlayTheSpireAI/sts_lightspeed/CMakeLists.txt C$:/Code/SlayTheSpireAI/sts_lightspeed/json/CMakeLists.txt C$:/Code/SlayTheSpireAI/sts_lightspeed/json/cmake/config.cmake.in C$:/Code/SlayTheSpireAI/sts_lightspeed/json/cmake/nlohmann_jsonConfigVersion.cmake.in C$:/Code/SlayTheSpireAI/sts_lightspeed/json/cmake/pkg-config.pc.in C$:/Code/SlayTheSpireAI/sts_lightspeed/pybind11/CMakeLists.txt C$:/Code/SlayTheSpireAI/sts_lightspeed/pybind11/tools/FindPythonLibsNew.cmake C$:/Code/SlayTheSpireAI/sts_lightspeed/pybind11/tools/JoinPaths.cmake C$:/Code/SlayTheSpireAI/sts_lightspeed/pybind11/tools/pybind11Common.cmake C$:/Code/SlayTheSpireAI/sts_lightspeed/pybind11/tools/pybind11Tools.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeCXXCompiler.cmake.in C$:/msys64/mingw64/share/cmake/Modules/CMakeCXXCompilerABI.cpp C$:/msys64/mingw64/share/cmake/Modules/CMakeCXXInformation.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeCommonLanguageInclude.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeCompilerIdDetection.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeDependentOption.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCompilerABI.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCompilerId.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCompilerSupport.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeDetermineRCCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeDetermineSystem.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeFindBinUtils.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeGenericSystem.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeInitializeConfigs.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeLanguageInformation.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeNinjaFindMake.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakePackageConfigHelpers.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeParseArguments.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeParseImplicitIncludeInfo.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeParseImplicitLinkInfo.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeParseLibraryArchitecture.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeRCCompiler.cmake.in C$:/msys64/mingw64/share/cmake/Modules/CMakeRCInformation.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeSystem.cmake.in C$:/msys64/mingw64/share/cmake/Modules/CMakeSystemSpecificInformation.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeTestCXXCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeTestCompilerCommon.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeTestRCCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/CheckCXXCompilerFlag.cmake C$:/msys64/mingw64/share/cmake/Modules/CheckCXXSourceCompiles.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/ADSP-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/ARMCC-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/ARMClang-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/AppleClang-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/Borland-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/Clang-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/Clang-DetermineCompilerInternal.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/Cray-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/CrayClang-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/Diab-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/Embarcadero-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/Fujitsu-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/GHS-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/GNU-CXX-CXXImportStd.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/GNU-CXX.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/GNU.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/HP-CXX-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/IAR-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/Intel-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/MSVC-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/NVHPC-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/NVIDIA-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/OrangeC-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/PGI-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/PathScale-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/Renesas-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/SCO-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/TI-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/TIClang-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/Tasking-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/Watcom-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/XL-CXX-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/ExternalProject.cmake C$:/msys64/mingw64/share/cmake/Modules/ExternalProject/shared_internal_commands.cmake C$:/msys64/mingw64/share/cmake/Modules/FindPackageHandleStandardArgs.cmake C$:/msys64/mingw64/share/cmake/Modules/FindPackageMessage.cmake C$:/msys64/mingw64/share/cmake/Modules/FindPythonInterp.cmake C$:/msys64/mingw64/share/cmake/Modules/GNUInstallDirs.cmake C$:/msys64/mingw64/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake C$:/msys64/mingw64/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake C$:/msys64/mingw64/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake C$:/msys64/mingw64/share/cmake/Modules/Internal/CMakeInspectCXXLinker.cmake C$:/msys64/mingw64/share/cmake/Modules/Internal/CheckCompilerFlag.cmake C$:/msys64/mingw64/share/cmake/Modules/Internal/CheckFlagCommonConfig.cmake C$:/msys64/mingw64/share/cmake/Modules/Internal/CheckSourceCompiles.cmake C$:/msys64/mingw64/share/cmake/Modules/Internal/FeatureTesting.cmake C$:/msys64/mingw64/share/cmake/Modules/Linker/GNU-CXX.cmake C$:/msys64/mingw64/share/cmake/Modules/Linker/GNU.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Linker/GNU.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Linker/Windows-GNU-CXX.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Linker/Windows-GNU.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Windows-Determine-CXX.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Windows-GNU-CXX.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Windows-GNU.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Windows-Initialize.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Windows-windres.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Windows.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/WindowsPaths.cmake C$:/msys64/mingw64/share/cmake/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/4.2.3/CMakeCXXCompiler.cmake CMakeFiles/4.2.3/CMakeRCCompiler.cmake CMakeFiles/4.2.3/CMakeSystem.cmake: phony
+build C$:/Code/SlayTheSpireAI/sts_lightspeed/build_py/CMakeFiles/VerifyGlobs.cmake C$:/Code/SlayTheSpireAI/sts_lightspeed/CMakeLists.txt C$:/Code/SlayTheSpireAI/sts_lightspeed/json/CMakeLists.txt C$:/Code/SlayTheSpireAI/sts_lightspeed/json/cmake/config.cmake.in C$:/Code/SlayTheSpireAI/sts_lightspeed/json/cmake/nlohmann_jsonConfigVersion.cmake.in C$:/Code/SlayTheSpireAI/sts_lightspeed/json/cmake/pkg-config.pc.in C$:/Code/SlayTheSpireAI/sts_lightspeed/pybind11/CMakeLists.txt C$:/Code/SlayTheSpireAI/sts_lightspeed/pybind11/tools/FindPythonLibsNew.cmake C$:/Code/SlayTheSpireAI/sts_lightspeed/pybind11/tools/JoinPaths.cmake C$:/Code/SlayTheSpireAI/sts_lightspeed/pybind11/tools/pybind11Common.cmake C$:/Code/SlayTheSpireAI/sts_lightspeed/pybind11/tools/pybind11Tools.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeCXXInformation.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeCommonLanguageInclude.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeDependentOption.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeGenericSystem.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeInitializeConfigs.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeLanguageInformation.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakePackageConfigHelpers.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeParseArguments.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeRCInformation.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeSystemSpecificInformation.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake C$:/msys64/mingw64/share/cmake/Modules/CheckCXXCompilerFlag.cmake C$:/msys64/mingw64/share/cmake/Modules/CheckCXXSourceCompiles.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/GNU-CXX.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/GNU.cmake C$:/msys64/mingw64/share/cmake/Modules/ExternalProject.cmake C$:/msys64/mingw64/share/cmake/Modules/ExternalProject/shared_internal_commands.cmake C$:/msys64/mingw64/share/cmake/Modules/FindPackageHandleStandardArgs.cmake C$:/msys64/mingw64/share/cmake/Modules/FindPackageMessage.cmake C$:/msys64/mingw64/share/cmake/Modules/FindPythonInterp.cmake C$:/msys64/mingw64/share/cmake/Modules/GNUInstallDirs.cmake C$:/msys64/mingw64/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake C$:/msys64/mingw64/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake C$:/msys64/mingw64/share/cmake/Modules/Internal/CheckCompilerFlag.cmake C$:/msys64/mingw64/share/cmake/Modules/Internal/CheckFlagCommonConfig.cmake C$:/msys64/mingw64/share/cmake/Modules/Internal/CheckSourceCompiles.cmake C$:/msys64/mingw64/share/cmake/Modules/Linker/GNU-CXX.cmake C$:/msys64/mingw64/share/cmake/Modules/Linker/GNU.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Linker/GNU.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Linker/Windows-GNU-CXX.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Linker/Windows-GNU.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Windows-GNU-CXX.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Windows-GNU.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Windows-Initialize.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Windows-windres.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Windows.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/WindowsPaths.cmake C$:/msys64/mingw64/share/cmake/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/4.2.3/CMakeCXXCompiler.cmake CMakeFiles/4.2.3/CMakeRCCompiler.cmake CMakeFiles/4.2.3/CMakeSystem.cmake: phony
 
 
 #############################################

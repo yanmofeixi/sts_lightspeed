@@ -44,46 +44,42 @@ namespace sts {
 
         int offset = 0;
 
+        // ===== 基础信息 [0-3] =====
         ret[offset++] = std::min(gc.curHp, playerHpMax);
         ret[offset++] = std::min(gc.maxHp, playerHpMax);
         ret[offset++] = std::min(gc.gold, playerGoldMax);
         ret[offset++] = gc.floorNum;
 
+        // ===== Boss One-Hot [4-13] =====
         int bossEncodeIdx = offset + bossEncodeMap.at(gc.boss);
         ret[bossEncodeIdx] = 1;
         offset += 10;
 
+        // ===== 牌组卡牌数量 [14-233] =====
         for (auto c : gc.deck.cards) {
             int encodeIdx = offset + getCardIdx(c);
             ret[encodeIdx] = std::min(ret[encodeIdx]+1, cardCountMax);
         }
         offset += 220;
 
+        // ===== 遗物 [234-411] =====
         for (auto r : gc.relics.relics) {
             int encodeIdx = offset + static_cast<int>(r.id);
             ret[encodeIdx] = 1;
         }
         offset += 178;
 
-        // ===== 战斗信息（可选扩展） =====
-        // 需要在战斗中才有意义
-        // 维度规划:
-        // [412-415] 玩家战斗状态：能量、护甲、力量、敏捷
-        // [416-420] 敌人 0: HP, Block, Strength, Vulnerable, Weak
-        // [421-425] 敌人 1: HP, Block, Strength, Vulnerable, Weak
-        // [426-430] 敌人 2: HP, Block, Strength, Vulnerable, Weak
-        // [431-435] 敌人 3: HP, Block, Strength, Vulnerable, Weak
-        // [436-440] 敌人 4: HP, Block, Strength, Vulnerable, Weak
-        // [441-450] 手牌：10 张，每张编码为 CardId（无牌为 0）
-        // 总计新增 39 维 -> 451
+        // ===== 战斗信息（需要在战斗中才有意义） =====
         if (bc != nullptr && gc.screenState == ScreenState::BATTLE) {
             int battleOffset = 412;
 
+            // ===== 玩家基础战斗状态 [412-415] =====
             ret[battleOffset++] = std::max(0, bc->player.energy);
             ret[battleOffset++] = std::max(0, bc->player.block);
             ret[battleOffset++] = bc->player.strength;
             ret[battleOffset++] = bc->player.dexterity;
 
+            // ===== 敌人基础状态 [416-440] (5敌人 * 5属性) =====
             for (int i = 0; i < 5; ++i) {
                 const auto &m = bc->monsters.arr[i];
                 if (m.isAlive()) {
@@ -93,14 +89,11 @@ namespace sts {
                     ret[battleOffset++] = m.vulnerable;
                     ret[battleOffset++] = m.weak;
                 } else {
-                    ret[battleOffset++] = 0;
-                    ret[battleOffset++] = 0;
-                    ret[battleOffset++] = 0;
-                    ret[battleOffset++] = 0;
-                    ret[battleOffset++] = 0;
+                    battleOffset += 5;
                 }
             }
 
+            // ===== 手牌CardId [441-450] (兼容旧格式) =====
             for (int i = 0; i < 10; ++i) {
                 if (i < bc->cards.cardsInHand) {
                     ret[battleOffset++] = static_cast<int>(bc->cards.hand[i].id);
@@ -109,8 +102,7 @@ namespace sts {
                 }
             }
 
-            // ===== 敌人意图信息 (15维) =====
-            // [451-465] 每个敌人 3 维：intentDamage, intentHits, isAttacking
+            // ===== 敌人意图信息 [451-465] (5敌人 * 3属性) =====
             for (int i = 0; i < 5; ++i) {
                 const auto &m = bc->monsters.arr[i];
                 if (m.isAlive()) {
@@ -120,8 +112,106 @@ namespace sts {
                     ret[battleOffset++] = dInfo.attackCount;      // 攻击次数
                     ret[battleOffset++] = m.isAttacking() ? 1 : 0; // 是否攻击
                 } else {
-                    ret[battleOffset++] = 0;
-                    ret[battleOffset++] = 0;
+                    battleOffset += 3;
+                }
+            }
+
+            // ===== 新增扩展信息 =====
+            
+            // ===== 手牌详细信息 [466-505] (10手牌 * 4属性) =====
+            // 每张手牌: cost, costForTurn, type(0=攻击,1=技能,2=能力,3=状态,4=诅咒), upgraded
+            for (int i = 0; i < 10; ++i) {
+                if (i < bc->cards.cardsInHand) {
+                    const auto &card = bc->cards.hand[i];
+                    ret[battleOffset++] = std::max(0, static_cast<int>(card.cost));
+                    ret[battleOffset++] = std::max(0, static_cast<int>(card.costForTurn));
+                    ret[battleOffset++] = static_cast<int>(card.getType());
+                    ret[battleOffset++] = card.upgraded ? 1 : 0;
+                } else {
+                    battleOffset += 4;
+                }
+            }
+
+            // ===== 玩家状态/Buff/Debuff [506-545] (40维) =====
+            const auto &p = bc->player;
+            // Debuffs
+            ret[battleOffset++] = p.hasStatusRuntime(PS::VULNERABLE) ? p.getStatusRuntime(PS::VULNERABLE) : 0;
+            ret[battleOffset++] = p.hasStatusRuntime(PS::WEAK) ? p.getStatusRuntime(PS::WEAK) : 0;
+            ret[battleOffset++] = p.hasStatusRuntime(PS::FRAIL) ? p.getStatusRuntime(PS::FRAIL) : 0;
+            // 基础属性 (已在前面输出，这里是冗余但为了完整性)
+            ret[battleOffset++] = p.strength;
+            ret[battleOffset++] = p.dexterity;
+            ret[battleOffset++] = p.artifact;
+            ret[battleOffset++] = p.focus;
+            // 防御相关
+            ret[battleOffset++] = p.hasStatusRuntime(PS::METALLICIZE) ? p.getStatusRuntime(PS::METALLICIZE) : 0;
+            ret[battleOffset++] = p.hasStatusRuntime(PS::PLATED_ARMOR) ? p.getStatusRuntime(PS::PLATED_ARMOR) : 0;
+            ret[battleOffset++] = p.hasStatusRuntime(PS::THORNS) ? p.getStatusRuntime(PS::THORNS) : 0;
+            ret[battleOffset++] = p.hasStatusRuntime(PS::REGEN) ? p.getStatusRuntime(PS::REGEN) : 0;
+            ret[battleOffset++] = p.hasStatusRuntime(PS::INTANGIBLE) ? p.getStatusRuntime(PS::INTANGIBLE) : 0;
+            ret[battleOffset++] = p.hasStatusRuntime(PS::BUFFER) ? p.getStatusRuntime(PS::BUFFER) : 0;
+            ret[battleOffset++] = p.hasStatusRuntime(PS::BARRICADE) ? 1 : 0;
+            // 进攻相关
+            ret[battleOffset++] = p.hasStatusRuntime(PS::CORRUPTION) ? 1 : 0;
+            ret[battleOffset++] = p.hasStatusRuntime(PS::DEMON_FORM) ? p.getStatusRuntime(PS::DEMON_FORM) : 0;
+            ret[battleOffset++] = p.hasStatusRuntime(PS::NOXIOUS_FUMES) ? p.getStatusRuntime(PS::NOXIOUS_FUMES) : 0;
+            ret[battleOffset++] = p.hasStatusRuntime(PS::AFTER_IMAGE) ? p.getStatusRuntime(PS::AFTER_IMAGE) : 0;
+            ret[battleOffset++] = p.hasStatusRuntime(PS::COMBUST) ? p.getStatusRuntime(PS::COMBUST) : 0;
+            ret[battleOffset++] = p.hasStatusRuntime(PS::DARK_EMBRACE) ? p.getStatusRuntime(PS::DARK_EMBRACE) : 0;
+            ret[battleOffset++] = p.hasStatusRuntime(PS::EVOLVE) ? p.getStatusRuntime(PS::EVOLVE) : 0;
+            ret[battleOffset++] = p.hasStatusRuntime(PS::FEEL_NO_PAIN) ? p.getStatusRuntime(PS::FEEL_NO_PAIN) : 0;
+            ret[battleOffset++] = p.hasStatusRuntime(PS::FIRE_BREATHING) ? p.getStatusRuntime(PS::FIRE_BREATHING) : 0;
+            ret[battleOffset++] = p.hasStatusRuntime(PS::INFINITE_BLADES) ? p.getStatusRuntime(PS::INFINITE_BLADES) : 0;
+            ret[battleOffset++] = p.hasStatusRuntime(PS::RAGE) ? p.getStatusRuntime(PS::RAGE) : 0;
+            ret[battleOffset++] = p.hasStatusRuntime(PS::RUPTURE) ? p.getStatusRuntime(PS::RUPTURE) : 0;
+            ret[battleOffset++] = p.hasStatusRuntime(PS::VIGOR) ? p.getStatusRuntime(PS::VIGOR) : 0;
+            ret[battleOffset++] = p.hasStatusRuntime(PS::DOUBLE_TAP) ? p.getStatusRuntime(PS::DOUBLE_TAP) : 0;
+            ret[battleOffset++] = p.hasStatusRuntime(PS::BURST) ? p.getStatusRuntime(PS::BURST) : 0;
+            // 限制类
+            ret[battleOffset++] = p.hasStatusRuntime(PS::DRAW_REDUCTION) ? 1 : 0;
+            ret[battleOffset++] = p.hasStatusRuntime(PS::ENTANGLED) ? 1 : 0;
+            ret[battleOffset++] = p.hasStatusRuntime(PS::NO_DRAW) ? 1 : 0;
+            ret[battleOffset++] = p.hasStatusRuntime(PS::CONFUSED) ? 1 : 0;
+            ret[battleOffset++] = p.hasStatusRuntime(PS::HEX) ? 1 : 0;
+            ret[battleOffset++] = p.hasStatusRuntime(PS::WRAITH_FORM) ? p.getStatusRuntime(PS::WRAITH_FORM) : 0;
+            // Watcher相关
+            ret[battleOffset++] = p.hasStatusRuntime(PS::MANTRA) ? p.getStatusRuntime(PS::MANTRA) : 0;
+            ret[battleOffset++] = (p.stance == Stance::DIVINITY) ? 1 : 0;
+            ret[battleOffset++] = (p.stance == Stance::CALM) ? 1 : 0;
+            ret[battleOffset++] = (p.stance == Stance::WRATH) ? 1 : 0;
+            // Defect相关
+            ret[battleOffset++] = p.orbSlots;
+
+            // ===== 敌人详细状态 [546-595] (5敌人 * 10状态) =====
+            for (int i = 0; i < 5; ++i) {
+                const auto &m = bc->monsters.arr[i];
+                if (m.isAlive()) {
+                    ret[battleOffset++] = m.poison;
+                    ret[battleOffset++] = m.artifact;
+                    ret[battleOffset++] = m.hasStatus<MS::INTANGIBLE>() ? m.getStatus<MS::INTANGIBLE>() : 0;
+                    ret[battleOffset++] = m.hasStatus<MS::THORNS>() ? m.getStatus<MS::THORNS>() : 0;
+                    ret[battleOffset++] = m.hasStatus<MS::CURL_UP>() ? m.getStatus<MS::CURL_UP>() : 0;
+                    ret[battleOffset++] = m.hasStatus<MS::MODE_SHIFT>() ? m.getStatus<MS::MODE_SHIFT>() : 0;
+                    ret[battleOffset++] = m.hasStatus<MS::RITUAL>() ? m.getStatus<MS::RITUAL>() : 0;
+                    ret[battleOffset++] = m.regen;
+                    ret[battleOffset++] = m.metallicize;
+                    ret[battleOffset++] = m.shackled;
+                } else {
+                    battleOffset += 10;
+                }
+            }
+
+            // ===== 牌堆信息 [596-599] =====
+            ret[battleOffset++] = static_cast<int>(bc->cards.drawPile.size());
+            ret[battleOffset++] = static_cast<int>(bc->cards.discardPile.size());
+            ret[battleOffset++] = static_cast<int>(bc->cards.exhaustPile.size());
+            ret[battleOffset++] = bc->turn;
+
+            // ===== 药水信息 [600-604] =====
+            for (int i = 0; i < 5; ++i) {
+                if (i < bc->potionCount) {
+                    ret[battleOffset++] = static_cast<int>(bc->potions[i]);
+                } else {
                     ret[battleOffset++] = 0;
                 }
             }
@@ -134,46 +224,130 @@ namespace sts {
         std::array<int,observation_space_size> ret {};
         int spaceOffset = 0;
 
-        ret[0] = playerHpMax;
-        ret[1] = playerHpMax;
-        ret[2] = playerGoldMax;
-        ret[3] = 60;
-        spaceOffset += 3;
+        // ===== 基础信息 [0-3] =====
+        ret[spaceOffset++] = playerHpMax;  // curHp
+        ret[spaceOffset++] = playerHpMax;  // maxHp
+        ret[spaceOffset++] = playerGoldMax; // gold
+        ret[spaceOffset++] = 60;           // floorNum
 
-        std::fill(ret.begin()+spaceOffset, ret.end(), 1);
+        // ===== Boss One-Hot [4-13] =====
+        std::fill(ret.begin()+spaceOffset, ret.begin()+spaceOffset+10, 1);
         spaceOffset += 10;
 
-        std::fill(ret.begin()+spaceOffset, ret.end(), cardCountMax);
+        // ===== 牌组卡牌数量 [14-233] =====
+        std::fill(ret.begin()+spaceOffset, ret.begin()+spaceOffset+220, cardCountMax);
         spaceOffset += 220;
 
-        std::fill(ret.begin()+spaceOffset, ret.end(), 1);
+        // ===== 遗物 [234-411] =====
+        std::fill(ret.begin()+spaceOffset, ret.begin()+spaceOffset+178, 1);
         spaceOffset += 178;
 
-        // ===== 战斗扩展部分最大值 =====
-        // 注意: 这些最大值用于归一化，不需要非常精确
-        ret[spaceOffset++] = 10;  // 能量
-        ret[spaceOffset++] = 999; // 护甲
-        ret[spaceOffset++] = 50;  // 力量
-        ret[spaceOffset++] = 50;  // 敏捷
+        // ===== 玩家基础战斗状态 [412-415] =====
+        ret[spaceOffset++] = 10;   // 能量
+        ret[spaceOffset++] = 999;  // 护甲
+        ret[spaceOffset++] = 50;   // 力量
+        ret[spaceOffset++] = 50;   // 敏捷
 
+        // ===== 敌人基础状态 [416-440] (5敌人 * 5属性) =====
         for (int i = 0; i < 5; ++i) {
-            ret[spaceOffset++] = playerHpMax; // 敌人 HP
-            ret[spaceOffset++] = 999;         // 敌人护甲
-            ret[spaceOffset++] = 50;          // 敌人力量
-            ret[spaceOffset++] = 50;          // 敌人易伤
-            ret[spaceOffset++] = 50;          // 敌人虚弱
+            ret[spaceOffset++] = 500;  // 敌人 HP (boss可能更高)
+            ret[spaceOffset++] = 999;  // 敌人护甲
+            ret[spaceOffset++] = 50;   // 敌人力量
+            ret[spaceOffset++] = 50;   // 敌人易伤
+            ret[spaceOffset++] = 50;   // 敌人虚弱
         }
 
+        // ===== 手牌CardId [441-450] =====
         for (int i = 0; i < 10; ++i) {
-            ret[spaceOffset++] = 400; // CardId 上限粗略估计
+            ret[spaceOffset++] = 400;  // CardId 上限
         }
 
-        // ===== 敌人意图部分最大值 =====
+        // ===== 敌人意图 [451-465] (5敌人 * 3属性) =====
         for (int i = 0; i < 5; ++i) {
             ret[spaceOffset++] = 200;  // intentDamage (计算后单次伤害)
             ret[spaceOffset++] = 20;   // intentHits (攻击次数)
             ret[spaceOffset++] = 1;    // isAttacking (0/1)
         }
+
+        // ===== 新增扩展信息 =====
+
+        // ===== 手牌详细信息 [466-505] (10手牌 * 4属性) =====
+        for (int i = 0; i < 10; ++i) {
+            ret[spaceOffset++] = 10;   // cost
+            ret[spaceOffset++] = 10;   // costForTurn
+            ret[spaceOffset++] = 4;    // type (0-4)
+            ret[spaceOffset++] = 1;    // upgraded (0/1)
+        }
+
+        // ===== 玩家状态/Buff/Debuff [506-545] (40维) =====
+        ret[spaceOffset++] = 20;   // VULNERABLE
+        ret[spaceOffset++] = 20;   // WEAK
+        ret[spaceOffset++] = 20;   // FRAIL
+        ret[spaceOffset++] = 50;   // strength (冗余)
+        ret[spaceOffset++] = 50;   // dexterity (冗余)
+        ret[spaceOffset++] = 20;   // artifact
+        ret[spaceOffset++] = 20;   // focus
+        ret[spaceOffset++] = 20;   // METALLICIZE
+        ret[spaceOffset++] = 30;   // PLATED_ARMOR
+        ret[spaceOffset++] = 20;   // THORNS
+        ret[spaceOffset++] = 20;   // REGEN
+        ret[spaceOffset++] = 10;   // INTANGIBLE
+        ret[spaceOffset++] = 10;   // BUFFER
+        ret[spaceOffset++] = 1;    // BARRICADE
+        ret[spaceOffset++] = 1;    // CORRUPTION
+        ret[spaceOffset++] = 20;   // DEMON_FORM
+        ret[spaceOffset++] = 20;   // NOXIOUS_FUMES
+        ret[spaceOffset++] = 20;   // AFTER_IMAGE
+        ret[spaceOffset++] = 20;   // COMBUST
+        ret[spaceOffset++] = 10;   // DARK_EMBRACE
+        ret[spaceOffset++] = 10;   // EVOLVE
+        ret[spaceOffset++] = 20;   // FEEL_NO_PAIN
+        ret[spaceOffset++] = 10;   // FIRE_BREATHING
+        ret[spaceOffset++] = 10;   // INFINITE_BLADES
+        ret[spaceOffset++] = 20;   // RAGE
+        ret[spaceOffset++] = 10;   // RUPTURE
+        ret[spaceOffset++] = 50;   // VIGOR
+        ret[spaceOffset++] = 5;    // DOUBLE_TAP
+        ret[spaceOffset++] = 5;    // BURST
+        ret[spaceOffset++] = 1;    // DRAW_REDUCTION
+        ret[spaceOffset++] = 1;    // ENTANGLED
+        ret[spaceOffset++] = 1;    // NO_DRAW
+        ret[spaceOffset++] = 1;    // CONFUSED
+        ret[spaceOffset++] = 1;    // HEX
+        ret[spaceOffset++] = 10;   // WRAITH_FORM
+        ret[spaceOffset++] = 10;   // MANTRA
+        ret[spaceOffset++] = 1;    // DIVINITY stance
+        ret[spaceOffset++] = 1;    // CALM stance
+        ret[spaceOffset++] = 1;    // WRATH stance
+        ret[spaceOffset++] = 10;   // orbSlots
+
+        // ===== 敌人详细状态 [546-595] (5敌人 * 10状态) =====
+        for (int i = 0; i < 5; ++i) {
+            ret[spaceOffset++] = 99;   // poison
+            ret[spaceOffset++] = 10;   // artifact
+            ret[spaceOffset++] = 10;   // intangible
+            ret[spaceOffset++] = 20;   // thorns
+            ret[spaceOffset++] = 20;   // curl_up
+            ret[spaceOffset++] = 100;  // mode_shift
+            ret[spaceOffset++] = 10;   // ritual
+            ret[spaceOffset++] = 30;   // regen
+            ret[spaceOffset++] = 30;   // metallicize
+            ret[spaceOffset++] = 20;   // shackled
+        }
+
+        // ===== 牌堆信息 [596-599] =====
+        ret[spaceOffset++] = 50;   // drawPile size
+        ret[spaceOffset++] = 50;   // discardPile size
+        ret[spaceOffset++] = 50;   // exhaustPile size
+        ret[spaceOffset++] = 20;   // turn
+
+        // ===== 药水信息 [600-604] =====
+        for (int i = 0; i < 5; ++i) {
+            ret[spaceOffset++] = 100;  // potion ID
+        }
+
+        // Note: Total should be 605 dimensions (indices 0-604)
+        // We declared 609 to leave small buffer, unused slots are 0
 
         return ret;
     }
