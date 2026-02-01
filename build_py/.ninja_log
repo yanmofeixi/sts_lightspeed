@@ -131,3 +131,6 @@
 36238	45814	7916180400528366	CMakeFiles/small-test.dir/src/sim/BattleSimulator.cpp.obj	c0f9c2a602852480
 35595	49926	7916180394103460	CMakeFiles/small-test.dir/src/game/SaveFile.cpp.obj	a8b63919236af835
 49927	50464	7916180537416882	small-test.exe	9a7b1df2ab0ff4b5
+11	199	7916264022520322	C:/Code/SlayTheSpireAI/sts_lightspeed/build_py/CMakeFiles/cmake.verify_globs	7c35e656d6579aac
+228	30543	7916264024691318	CMakeFiles/slaythespire.dir/bindings/slaythespire.cpp.obj	17d7a842755045a1
+30544	31392	7916264327853703	slaythespire.cp312-win_amd64.pyd	357fa8e6bdd93df0

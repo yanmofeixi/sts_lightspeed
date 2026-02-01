@@ -12,6 +12,7 @@
 
 #include "sim/ConsoleSimulator.h"
 #include "sim/search/ScumSearchAgent2.h"
+#include "sim/search/BattleScumSearcher2.h"
 #include "sim/search/GameAction.h"
 #include "sim/search/Action.h"
 #include "sim/SimHelpers.h"
@@ -99,6 +100,7 @@ PYBIND11_MODULE(slaythespire, m) {
     // BattleContext class
     pybind11::class_<BattleContext> battleContext(m, "BattleContext");
     battleContext.def(pybind11::init<>())
+        .def(pybind11::init<const BattleContext &>())
         .def("init", pybind11::overload_cast<const GameContext &>(&BattleContext::init), "Initialize battle from GameContext")
         .def("exit_battle", &BattleContext::exitBattle, "Exit battle and update GameContext")
         .def("is_card_play_allowed", &BattleContext::isCardPlayAllowed, "Check if cards can be played")
@@ -106,6 +108,7 @@ PYBIND11_MODULE(slaythespire, m) {
         .def_readonly("turn", &BattleContext::turn)
         .def_readonly("input_state", &BattleContext::inputState)
         .def_property_readonly("player_hp", [](const BattleContext &bc) { return bc.player.curHp; })
+        .def_property_readonly("player_max_hp", [](const BattleContext &bc) { return bc.player.maxHp; })
         .def_property_readonly("player_block", [](const BattleContext &bc) { return bc.player.block; })
         .def_property_readonly("player_energy", [](const BattleContext &bc) { return bc.player.energy; })
         .def_property_readonly("cards_in_hand", [](const BattleContext &bc) { return bc.cards.cardsInHand; })
@@ -175,6 +178,19 @@ PYBIND11_MODULE(slaythespire, m) {
                 << " hand=" << bc.cards.cardsInHand 
                 << " outcome=" << battleOutcomeStrings[static_cast<int>(bc.outcome)] << ">";
             return oss.str();
+        });
+
+    pybind11::class_<search::BattleScumSearcher2> battleSearcher(m, "BattleScumSearcher2");
+    battleSearcher
+        .def(pybind11::init<const BattleContext &>())
+        .def("search", &search::BattleScumSearcher2::search)
+        .def("step", &search::BattleScumSearcher2::step)
+        .def_readwrite("best_action_sequence", &search::BattleScumSearcher2::bestActionSequence)
+        .def_readwrite("outcome_player_hp", &search::BattleScumSearcher2::outcomePlayerHp)
+        .def_readwrite("best_action_value", &search::BattleScumSearcher2::bestActionValue)
+        .def_readwrite("min_action_value", &search::BattleScumSearcher2::minActionValue)
+        .def("set_eval_fn", [](search::BattleScumSearcher2 &s, const search::EvalFnc &fn) {
+            s.evalFnc = fn;
         });
 
     pybind11::class_<search::ScumSearchAgent2> agent(m, "Agent");
